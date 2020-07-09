@@ -1,0 +1,152 @@
+class Nine{
+    
+    function int score(){
+      return 4;  
+    }
+    function int id(){
+      return 9;
+    }
+
+
+    function int values(){
+      var array a;
+      let a = Array.new(4);
+      let a[0] = 0;
+      let a[1] = 8;
+      let a[2] = 16;
+      let a[3] = 24;
+      
+      return a;
+    }
+
+    function void draw(int a,int b){
+        var int x1,x2,y1,y2,y3,y4;
+        let x1 = a;
+        let x2 = a+20;
+        let y1 = b;
+        let y2 = b+24;
+        let y3 = b+48;
+        let y4 = b+72;
+
+        do Screen.drawRectangle(x1,y1,x2,y1+20);
+        do Screen.drawRectangle(x1,y2,x2,y2+20);
+        do Screen.drawRectangle(x1,y3,x2,y3+20);
+        do Screen.drawRectangle(x1,y4,x2,y4+20);
+        return;
+    }
+
+    function void small(int a,int b){
+        var int x1,x2,y1,y2,y3,y4;
+        let a = a-5;
+        let b = b-26;
+        let x1 = a;
+        let x2 = a+10;
+        let y1 = b;
+        let y2 = b+14;
+        let y3 = b+28;
+        let y4 = b+42;
+
+        do Screen.drawRectangle(x1,y1,x2,y1+10);
+        do Screen.drawRectangle(x1,y2,x2,y2+10);
+        do Screen.drawRectangle(x1,y3,x2,y3+10);
+        do Screen.drawRectangle(x1,y4,x2,y4+10);
+        return;
+    }
+
+    function void shape(int a, int b){
+      do Blocks.shape_block(a,b);
+      do Blocks.shape_block(a,b+24);
+      do Blocks.shape_block(a,b+48);
+      do Blocks.shape_block(a,b+72);
+      return;
+    }
+
+    function void up(int a, int b){
+      do Screen.setColor(false);
+      do Nine.shape(a,b);
+      do Screen.setColor(true);
+      do Nine.shape(a,b-24);
+      return;
+    }
+
+    function void down(int a, int b){
+      do Screen.setColor(false);
+      do Nine.shape(a,b);
+      do Screen.setColor(true);
+      do Nine.shape(a,b+24);
+      return;
+    }
+
+    function void left(int a, int b){
+      do Screen.setColor(false);
+      do Nine.shape(a,b);
+      do Screen.setColor(true);
+      do Nine.shape(a-24,b);
+      return;}
+
+
+    function void right(int a, int b){
+      do Screen.setColor(false);
+      do Nine.shape(a,b);
+      do Screen.setColor(true);
+      do Nine.shape(a+24,b);
+      return;
+    }
+
+    function array play(int a, int b, array gameArray){
+      var int x,y;
+      var char key,c;
+      var boolean flag;
+      var int current_array_position;
+      
+      let current_array_position  = 0;
+      let x = a;
+      let y = b;
+      do Nine.shape(x,y);
+      let flag = false;
+      while(~flag){
+          while(key = 0){
+              let key = Keyboard.keyPressed();
+          }
+          let c = key;
+          while(~(key=0)){
+            let key = Keyboard.keyPressed();
+          }
+          if(c = 133){
+            if(y+59<190){
+            do Nine.down(x,y);
+            let current_array_position = current_array_position + 8;
+            let y = y+24;}
+          }
+          if(c = 131){
+            if(y-24>14){
+            do Nine.up(x,y);
+            let current_array_position = current_array_position - 8;
+            let y = y-24;}
+          }
+          if(c = 132){
+            if(x+14<180){
+            do Nine.right(x,y);
+            let current_array_position = current_array_position + 1;
+            let x = x +24;}
+          }
+          if(c=130){
+            if(x-24>14){
+            do Nine.left(x,y);
+            let current_array_position = current_array_position - 1;
+            let x = x-24;}
+          }
+          if(c=32){
+           if(Blocks.isDrawable(Nine.values(),Nine.score(),current_array_position,gameArray)){
+            do Nine.draw(x,y);
+            do Screen.setColor(false);
+            do Nine.shape(x,y);
+            do Screen.setColor(true);
+            let gameArray = Blocks.gridDraw(Nine.values(),Nine.score(),current_array_position,gameArray);
+            let flag = true;}
+          }
+        }
+            return gameArray;
+    }
+
+}

@@ -1,0 +1,155 @@
+class Seven{
+    function int score(){
+      return 5;  
+    }
+    function int id(){
+      return 7;
+    }
+
+    function array values(){
+      var array a;
+      let a = Array.new(5);
+      let a[0] = 0;
+      let a[1] = 1;
+      let a[2] = 2;
+      let a[3] = 10;
+      let a[4] = 18;
+      
+      return a;
+    }
+
+    function void draw(int a,int b){
+        var int x1, y1, x2, y2, x3, y3;
+        let x1 = a;
+        let y1 = b;
+        let x2 = a + 24;
+        let y2 = b + 24;
+        let x3 = a + 48;
+        let y3 = b + 48;
+        do Screen.drawRectangle(x1,y1,x1+20,y1+20);
+        do Screen.drawRectangle(x2,y1,x2+20,y1+20);
+        do Screen.drawRectangle(x3,y1,x3+20,y1+20);
+
+        do Screen.drawRectangle(x3,y2,x3+20,y2+20);
+        do Screen.drawRectangle(x3,y3,x3+20,y3+20);
+        
+        return;
+    }
+
+    function void small(int a,int b){
+        var int x1, y1, x2, y2, x3, y3;
+        let a = a - 19;
+        let b = b - 19;
+        let x1 = a;
+        let y1 = b;
+        let x2 = a + 14;
+        let y2 = b + 14;
+        let x3 = a + 28;
+        let y3 = b + 28;
+        do Screen.drawRectangle(x1,y1,x1+10,y1+10);
+        do Screen.drawRectangle(x2,y1,x2+10,y1+10);
+        do Screen.drawRectangle(x3,y1,x3+10,y1+10);
+
+        do Screen.drawRectangle(x3,y2,x3+10,y2+10);
+        do Screen.drawRectangle(x3,y3,x3+10,y3+10);
+        
+        return;
+    }
+
+    function void shape(int a, int b){
+      do Blocks.shape_block(a,b);
+      do Blocks.shape_block(a+24,b);
+      do Blocks.shape_block(a+48,b);
+      do Blocks.shape_block(a+48,b+24);
+      do Blocks.shape_block(a+48,b+48);
+      return;
+    }
+
+    function void up(int a, int b){
+      do Screen.setColor(false);
+      do Seven.shape(a,b);
+      do Screen.setColor(true);
+      do Seven.shape(a,b-24);
+      return;
+    }
+
+    function void down(int a, int b){
+      do Screen.setColor(false);
+      do Seven.shape(a,b);
+      do Screen.setColor(true);
+      do Seven.shape(a,b+24);
+      return;
+    }
+
+    function void left(int a, int b){
+      do Screen.setColor(false);
+      do Seven.shape(a,b);
+      do Screen.setColor(true);
+      do Seven.shape(a-24,b);
+      return;}
+
+
+    function void right(int a, int b){
+      do Screen.setColor(false);
+      do Seven.shape(a,b);
+      do Screen.setColor(true);
+      do Seven.shape(a+24,b);
+      return;
+    }
+
+    function array play(int a, int b,array gameArray){
+      var int x,y;
+      var char key,c;
+      var boolean flag;
+      var int current_array_position;
+
+      let current_array_position  = 0;
+      let x = a;
+      let y = b;
+      do Seven.shape(x,y);
+      let flag = false;
+      while(~flag){
+          while(key = 0){
+              let key = Keyboard.keyPressed();
+          }
+          let c = key;
+          while(~(key=0)){
+            let key = Keyboard.keyPressed();
+          }
+          if(c = 133){
+            if(y+38<180){
+            do Seven.down(x,y);
+            let current_array_position = current_array_position + 8;
+            let y = y+24;}
+          }
+          if(c = 131){
+            if(y-24>14){
+            do Seven.up(x,y);
+            let current_array_position = current_array_position - 8;
+            let y = y-24;}
+          }
+          if(c = 132){
+            if(x+38<170){
+            do Seven.right(x,y);
+            let current_array_position = current_array_position + 1;
+            let x = x +24;}
+          }
+          if(c=130){
+            if(x-24>14){
+            do Seven.left(x,y);
+            let current_array_position = current_array_position - 1;
+            let x = x-24;}
+          }
+          if(c=32){
+           if(Blocks.isDrawable(Seven.values(),Seven.score(),current_array_position,gameArray)){
+            do Seven.draw(x,y);
+            do Screen.setColor(false);
+            do Seven.shape(x,y);
+            do Screen.setColor(true);
+            let gameArray = Blocks.gridDraw(Seven.values(),Seven.score(),current_array_position,gameArray);
+            let flag = true;}
+          }
+        }
+            return gameArray;
+    }
+}

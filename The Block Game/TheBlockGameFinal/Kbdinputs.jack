@@ -1,0 +1,33 @@
+class Kbdinputs{
+
+    function int pressed(){
+        var char key,c;
+        var boolean flag;
+        let flag = false;
+
+        while(~flag){
+            while(key=0){
+                let key = Keyboard.keyPressed();
+            }
+            let c = key;
+            while(~(key=0)){
+                let key = Keyboard.keyPressed();
+            }
+            
+            if(c=49){
+                let flag = true;
+                return 0;
+            }
+            if(c=50){
+                let flag = true;
+                return 1;
+            }
+            if(c=51){
+                let flag = true;
+                return 2;
+            }
+        }
+        return 0;
+    }
+
+}

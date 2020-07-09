@@ -1,0 +1,12 @@
+class Main{
+    function void main(){
+        var int x,y,z,w;
+        let x = 0;
+        let y = 0;
+        let z = 30;
+        let w = 30;
+
+        do Screen.drawRectangle(x,y,z,w);
+        return;
+    }
+}

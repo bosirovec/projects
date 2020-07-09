@@ -1,0 +1,999 @@
+function Letter.okomitoPet 6
+push argument 0
+pop local 0
+push argument 1
+pop local 1
+push argument 1
+push constant 7
+add
+pop local 2
+push argument 1
+push constant 14
+add
+pop local 3
+push argument 1
+push constant 21
+add
+pop local 4
+push argument 1
+push constant 28
+add
+pop local 5
+push local 0
+push local 1
+push local 0
+push constant 5
+add
+push local 1
+push constant 5
+add
+call Screen.drawRectangle 4
+pop temp 0
+push local 0
+push local 2
+push local 0
+push constant 5
+add
+push local 2
+push constant 5
+add
+call Screen.drawRectangle 4
+pop temp 0
+push local 0
+push local 3
+push local 0
+push constant 5
+add
+push local 3
+push constant 5
+add
+call Screen.drawRectangle 4
+pop temp 0
+push local 0
+push local 4
+push local 0
+push constant 5
+add
+push local 4
+push constant 5
+add
+call Screen.drawRectangle 4
+pop temp 0
+push local 0
+push local 5
+push local 0
+push constant 5
+add
+push local 5
+push constant 5
+add
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function Letter.okomitoTri 4
+push argument 0
+pop local 0
+push argument 1
+pop local 1
+push argument 1
+push constant 7
+add
+pop local 2
+push argument 1
+push constant 14
+add
+pop local 3
+push local 0
+push local 1
+push local 0
+push constant 5
+add
+push local 1
+push constant 5
+add
+call Screen.drawRectangle 4
+pop temp 0
+push local 0
+push local 2
+push local 0
+push constant 5
+add
+push local 2
+push constant 5
+add
+call Screen.drawRectangle 4
+pop temp 0
+push local 0
+push local 3
+push local 0
+push constant 5
+add
+push local 3
+push constant 5
+add
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function Letter.vodoravnoPet 6
+push argument 0
+pop local 0
+push argument 1
+pop local 1
+push argument 0
+push constant 7
+add
+pop local 2
+push argument 0
+push constant 14
+add
+pop local 3
+push argument 0
+push constant 21
+add
+pop local 4
+push argument 0
+push constant 28
+add
+pop local 5
+push local 0
+push local 1
+push local 0
+push constant 5
+add
+push local 1
+push constant 5
+add
+call Screen.drawRectangle 4
+pop temp 0
+push local 2
+push local 1
+push local 2
+push constant 5
+add
+push local 1
+push constant 5
+add
+call Screen.drawRectangle 4
+pop temp 0
+push local 3
+push local 1
+push local 3
+push constant 5
+add
+push local 1
+push constant 5
+add
+call Screen.drawRectangle 4
+pop temp 0
+push local 4
+push local 1
+push local 4
+push constant 5
+add
+push local 1
+push constant 5
+add
+call Screen.drawRectangle 4
+pop temp 0
+push local 5
+push local 1
+push local 5
+push constant 5
+add
+push local 1
+push constant 5
+add
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function Letter.vodoravnoCetiri 5
+push argument 0
+pop local 0
+push argument 1
+pop local 1
+push argument 0
+push constant 7
+add
+pop local 2
+push argument 0
+push constant 14
+add
+pop local 3
+push argument 0
+push constant 21
+add
+pop local 4
+push local 0
+push local 1
+push local 0
+push constant 5
+add
+push local 1
+push constant 5
+add
+call Screen.drawRectangle 4
+pop temp 0
+push local 2
+push local 1
+push local 2
+push constant 5
+add
+push local 1
+push constant 5
+add
+call Screen.drawRectangle 4
+pop temp 0
+push local 3
+push local 1
+push local 3
+push constant 5
+add
+push local 1
+push constant 5
+add
+call Screen.drawRectangle 4
+pop temp 0
+push local 4
+push local 1
+push local 4
+push constant 5
+add
+push local 1
+push constant 5
+add
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function Letter.vodoravnoTri 4
+push argument 0
+pop local 0
+push argument 1
+pop local 1
+push argument 0
+push constant 7
+add
+pop local 2
+push argument 0
+push constant 14
+add
+pop local 3
+push local 0
+push local 1
+push local 0
+push constant 5
+add
+push local 1
+push constant 5
+add
+call Screen.drawRectangle 4
+pop temp 0
+push local 2
+push local 1
+push local 2
+push constant 5
+add
+push local 1
+push constant 5
+add
+call Screen.drawRectangle 4
+pop temp 0
+push local 3
+push local 1
+push local 3
+push constant 5
+add
+push local 1
+push constant 5
+add
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function Letter.vodoravnoDva 3
+push argument 0
+pop local 0
+push argument 1
+pop local 1
+push argument 0
+push constant 7
+add
+pop local 2
+push local 0
+push local 1
+push local 0
+push constant 5
+add
+push local 1
+push constant 5
+add
+call Screen.drawRectangle 4
+pop temp 0
+push local 2
+push local 1
+push local 2
+push constant 5
+add
+push local 1
+push constant 5
+add
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function Letter.T 2
+push argument 0
+pop local 0
+push argument 1
+pop local 1
+push local 0
+push local 1
+call Letter.vodoravnoPet 2
+pop temp 0
+push local 0
+push constant 14
+add
+push local 1
+call Letter.okomitoPet 2
+pop temp 0
+push constant 0
+return
+function Letter.H 2
+push argument 0
+pop local 0
+push argument 1
+pop local 1
+push local 0
+push local 1
+call Letter.okomitoPet 2
+pop temp 0
+push local 0
+push local 1
+push constant 14
+add
+call Letter.vodoravnoCetiri 2
+pop temp 0
+push local 0
+push constant 21
+add
+push local 1
+call Letter.okomitoPet 2
+pop temp 0
+push constant 0
+return
+function Letter.E 2
+push argument 0
+pop local 0
+push argument 1
+pop local 1
+push local 0
+push local 1
+call Letter.okomitoPet 2
+pop temp 0
+push local 0
+push local 1
+call Letter.vodoravnoCetiri 2
+pop temp 0
+push local 0
+push local 1
+push constant 14
+add
+call Letter.vodoravnoTri 2
+pop temp 0
+push local 0
+push local 1
+push constant 28
+add
+call Letter.vodoravnoCetiri 2
+pop temp 0
+push constant 0
+return
+function Letter.B 2
+push argument 0
+pop local 0
+push argument 1
+pop local 1
+push local 0
+push local 1
+call Letter.okomitoPet 2
+pop temp 0
+push local 0
+push local 1
+call Letter.vodoravnoTri 2
+pop temp 0
+push local 0
+push local 1
+push constant 14
+add
+call Letter.vodoravnoTri 2
+pop temp 0
+push local 0
+push local 1
+push constant 28
+add
+call Letter.vodoravnoTri 2
+pop temp 0
+push local 0
+push constant 21
+add
+push local 1
+push constant 7
+add
+push local 0
+push constant 26
+add
+push local 1
+push constant 12
+add
+call Screen.drawRectangle 4
+pop temp 0
+push local 0
+push constant 21
+add
+push local 1
+push constant 21
+add
+push local 0
+push constant 26
+add
+push local 1
+push constant 26
+add
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function Letter.L 2
+push argument 0
+pop local 0
+push argument 1
+pop local 1
+push local 0
+push local 1
+call Letter.okomitoPet 2
+pop temp 0
+push local 0
+push local 1
+push constant 28
+add
+call Letter.vodoravnoTri 2
+pop temp 0
+push constant 0
+return
+function Letter.O 2
+push argument 0
+pop local 0
+push argument 1
+pop local 1
+push local 0
+push local 1
+call Letter.okomitoPet 2
+pop temp 0
+push local 0
+push constant 21
+add
+push local 1
+call Letter.okomitoPet 2
+pop temp 0
+push local 0
+push local 1
+call Letter.vodoravnoCetiri 2
+pop temp 0
+push local 0
+push local 1
+push constant 28
+add
+call Letter.vodoravnoCetiri 2
+pop temp 0
+push constant 0
+return
+function Letter.C 2
+push argument 0
+pop local 0
+push argument 1
+pop local 1
+push local 0
+push local 1
+call Letter.okomitoPet 2
+pop temp 0
+push local 0
+push local 1
+call Letter.vodoravnoTri 2
+pop temp 0
+push local 0
+push local 1
+push constant 28
+add
+call Letter.vodoravnoTri 2
+pop temp 0
+push constant 0
+return
+function Letter.K 2
+push argument 0
+pop local 0
+push argument 1
+pop local 1
+push local 0
+push local 1
+call Letter.okomitoPet 2
+pop temp 0
+push local 0
+push constant 7
+add
+push local 1
+push constant 14
+add
+push local 0
+push constant 12
+add
+push local 1
+push constant 19
+add
+call Screen.drawRectangle 4
+pop temp 0
+push local 0
+push constant 14
+add
+push local 1
+push constant 7
+add
+push local 0
+push constant 19
+add
+push local 1
+push constant 12
+add
+call Screen.drawRectangle 4
+pop temp 0
+push local 0
+push constant 14
+add
+push local 1
+push constant 21
+add
+push local 0
+push constant 19
+add
+push local 1
+push constant 26
+add
+call Screen.drawRectangle 4
+pop temp 0
+push local 0
+push constant 21
+add
+push local 1
+push local 0
+push constant 26
+add
+push local 1
+push constant 5
+add
+call Screen.drawRectangle 4
+pop temp 0
+push local 0
+push constant 21
+add
+push local 1
+push constant 28
+add
+push local 0
+push constant 26
+add
+push local 1
+push constant 33
+add
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function Letter.G 2
+push argument 0
+pop local 0
+push argument 1
+pop local 1
+push local 0
+push local 1
+call Letter.okomitoPet 2
+pop temp 0
+push local 0
+push local 1
+call Letter.vodoravnoCetiri 2
+pop temp 0
+push local 0
+push local 1
+push constant 28
+add
+call Letter.vodoravnoCetiri 2
+pop temp 0
+push local 0
+push constant 14
+add
+push local 1
+push constant 14
+add
+call Letter.vodoravnoDva 2
+pop temp 0
+push local 0
+push constant 21
+add
+push local 1
+push constant 21
+add
+push local 0
+push constant 26
+add
+push local 1
+push constant 26
+add
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function Letter.A 2
+push argument 0
+pop local 0
+push argument 1
+pop local 1
+push local 0
+push local 1
+call Letter.okomitoPet 2
+pop temp 0
+push local 0
+push constant 21
+add
+push local 1
+call Letter.okomitoPet 2
+pop temp 0
+push local 0
+push local 1
+call Letter.vodoravnoCetiri 2
+pop temp 0
+push local 0
+push local 1
+push constant 14
+add
+call Letter.vodoravnoCetiri 2
+pop temp 0
+push constant 0
+return
+function Letter.M 2
+push argument 0
+pop local 0
+push argument 1
+pop local 1
+push local 0
+push local 1
+call Letter.okomitoPet 2
+pop temp 0
+push local 0
+push constant 28
+add
+push local 1
+call Letter.okomitoPet 2
+pop temp 0
+push local 0
+push constant 7
+add
+push local 1
+push constant 7
+add
+push local 0
+push constant 12
+add
+push local 1
+push constant 12
+add
+call Screen.drawRectangle 4
+pop temp 0
+push local 0
+push constant 14
+add
+push local 1
+push constant 14
+add
+push local 0
+push constant 19
+add
+push local 1
+push constant 19
+add
+call Screen.drawRectangle 4
+pop temp 0
+push local 0
+push constant 21
+add
+push local 1
+push constant 7
+add
+push local 0
+push constant 26
+add
+push local 1
+push constant 12
+add
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function Letter.V 2
+push argument 0
+pop local 0
+push argument 1
+pop local 1
+push local 0
+push local 1
+call Letter.okomitoTri 2
+pop temp 0
+push local 0
+push constant 28
+add
+push local 1
+call Letter.okomitoTri 2
+pop temp 0
+push local 0
+push constant 7
+add
+push local 1
+push constant 21
+add
+push local 0
+push constant 12
+add
+push local 1
+push constant 26
+add
+call Screen.drawRectangle 4
+pop temp 0
+push local 0
+push constant 21
+add
+push local 1
+push constant 21
+add
+push local 0
+push constant 26
+add
+push local 1
+push constant 26
+add
+call Screen.drawRectangle 4
+pop temp 0
+push local 0
+push constant 14
+add
+push local 1
+push constant 28
+add
+push local 0
+push constant 19
+add
+push local 1
+push constant 33
+add
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function Letter.R 2
+push argument 0
+pop local 0
+push argument 1
+pop local 1
+push local 0
+push local 1
+call Letter.okomitoPet 2
+pop temp 0
+push local 0
+push constant 21
+add
+push local 1
+call Letter.okomitoTri 2
+pop temp 0
+push local 0
+push local 1
+call Letter.vodoravnoCetiri 2
+pop temp 0
+push local 0
+push local 1
+push constant 14
+add
+call Letter.vodoravnoCetiri 2
+pop temp 0
+push local 0
+push constant 14
+add
+push local 1
+push constant 21
+add
+push local 0
+push constant 19
+add
+push local 1
+push constant 26
+add
+call Screen.drawRectangle 4
+pop temp 0
+push local 0
+push constant 21
+add
+push local 1
+push constant 28
+add
+push local 0
+push constant 26
+add
+push local 1
+push constant 33
+add
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function Letter.Headline 2
+push constant 60
+pop local 0
+push constant 30
+pop local 1
+push local 0
+push local 1
+call Letter.T 2
+pop temp 0
+push local 0
+push constant 37
+add
+push constant 2
+add
+push local 1
+call Letter.H 2
+pop temp 0
+push local 0
+push constant 67
+add
+push constant 4
+add
+push local 1
+call Letter.E 2
+pop temp 0
+push local 0
+push constant 107
+add
+push constant 6
+add
+push local 1
+call Letter.B 2
+pop temp 0
+push local 0
+push constant 137
+add
+push constant 8
+add
+push local 1
+call Letter.L 2
+pop temp 0
+push local 0
+push constant 160
+add
+push constant 10
+add
+push local 1
+call Letter.O 2
+pop temp 0
+push local 0
+push constant 190
+add
+push constant 12
+add
+push local 1
+call Letter.C 2
+pop temp 0
+push local 0
+push constant 213
+add
+push constant 14
+add
+push local 1
+call Letter.K 2
+pop temp 0
+push local 0
+push constant 253
+add
+push constant 16
+add
+push local 1
+call Letter.G 2
+pop temp 0
+push local 0
+push constant 283
+add
+push constant 18
+add
+push local 1
+call Letter.A 2
+pop temp 0
+push local 0
+push constant 313
+add
+push constant 20
+add
+push local 1
+call Letter.M 2
+pop temp 0
+push local 0
+push constant 348
+add
+push constant 22
+add
+push local 1
+call Letter.E 2
+pop temp 0
+push constant 0
+return
+function Letter.Gameover 2
+push constant 100
+pop local 0
+push constant 50
+pop local 1
+push local 0
+push local 1
+call Letter.G 2
+pop temp 0
+push local 0
+push constant 39
+add
+push constant 3
+sub
+push local 1
+call Letter.A 2
+pop temp 0
+push local 0
+push constant 71
+add
+push local 1
+call Letter.M 2
+pop temp 0
+push local 0
+push constant 106
+add
+push constant 5
+add
+push local 1
+call Letter.E 2
+pop temp 0
+push local 0
+push constant 150
+add
+push constant 5
+add
+push local 1
+call Letter.O 2
+pop temp 0
+push local 0
+push constant 180
+add
+push constant 10
+add
+push local 1
+call Letter.V 2
+pop temp 0
+push local 0
+push constant 210
+add
+push constant 20
+add
+push local 1
+call Letter.E 2
+pop temp 0
+push local 0
+push constant 240
+add
+push constant 25
+add
+push local 1
+call Letter.R 2
+pop temp 0
+push constant 0
+return

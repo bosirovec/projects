@@ -1,0 +1,130 @@
+class Twelve{
+
+
+    function int score(){
+      return 1;  
+    }
+
+    function int id(){
+      return 12;
+    }
+
+    function int values(){
+      var array a;
+      let a = Array.new(1);
+      let a[0] = 0;
+      
+      return a;
+    }
+
+    function void draw(int a, int b){
+        var int x1, y1;
+        let x1 = a;
+        let y1 = b;
+        do Screen.drawRectangle(x1,y1,x1+20,y1+20);
+        return;
+    }
+
+    function void small(int a, int b){
+        var int x1, y1;
+        let a = a-5;
+        let b = b-5;
+        let x1 = a;
+        let y1 = b;
+        do Screen.drawRectangle(x1,y1,x1+10,y1+10);
+        return;
+    }
+
+    function void shape(int a, int b){
+      do Blocks.shape_block(a,b);
+      return;
+    }
+
+    function void up(int a, int b){
+      do Screen.setColor(false);
+      do Twelve.shape(a,b);
+      do Screen.setColor(true);
+      do Twelve.shape(a,b-24);
+      return;
+    }
+
+    function void down(int a, int b){
+      do Screen.setColor(false);
+      do Twelve.shape(a,b);
+      do Screen.setColor(true);
+      do Twelve.shape(a,b+24);
+      return;
+    }
+
+    function void left(int a, int b){
+      do Screen.setColor(false);
+      do Twelve.shape(a,b);
+      do Screen.setColor(true);
+      do Twelve.shape(a-24,b);
+      return;}
+
+
+    function void right(int a, int b){
+      do Screen.setColor(false);
+      do Twelve.shape(a,b);
+      do Screen.setColor(true);
+      do Twelve.shape(a+24,b);
+      return;
+    }
+
+    function array play(int a, int b, array gameArray){
+      var int x,y;
+      var char key,c;
+      var boolean flag;
+      var int current_array_position;
+      
+      let current_array_position  = 0;
+      let x = a;
+      let y = b;
+      do Twelve.shape(x,y);
+      let flag = false;
+      while(~flag){
+          while(key = 0){
+              let key = Keyboard.keyPressed();
+          }
+          let c = key;
+          while(~(key=0)){
+            let key = Keyboard.keyPressed();
+          }
+          if(c = 133){
+            if(y+14<200){
+            do Twelve.down(x,y);
+            let current_array_position = current_array_position + 8;
+            let y = y+24;}
+          }
+          if(c = 131){
+            if(y-24>14){
+            do Twelve.up(x,y);
+            let current_array_position = current_array_position - 8;
+            let y = y-24;}
+          }
+          if(c = 132){
+            if(x+14<180){
+            do Twelve.right(x,y);
+            let current_array_position = current_array_position + 1;
+            let x = x +24;}
+          }
+          if(c=130){
+            if(x-24>14){
+            do Twelve.left(x,y);
+            let current_array_position = current_array_position - 1;
+            let x = x-24;}
+          }
+          if(c=32){
+           if(Blocks.isDrawable(Twelve.values(),Twelve.score(),current_array_position,gameArray)){
+            do Twelve.draw(x,y);
+            do Screen.setColor(false);
+            do Twelve.shape(x,y);
+            do Screen.setColor(true);
+            let gameArray = Blocks.gridDraw(Twelve.values(),Twelve.score(),current_array_position,gameArray);
+            let flag = true;}
+          }
+        }
+            return gameArray;
+    }
+}

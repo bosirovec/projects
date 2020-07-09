@@ -1,0 +1,1060 @@
+class Blocks{
+    function void layout(){
+        var int t1,t2,x1,x2,y1,y2,t0;
+        var String score;
+        let t1 = 240;
+        let t2 = 90;
+        let x1 = 15;
+        let y1 = 15;
+        let x2 = 35;
+        let y2 = 35; 
+        let t0 = t1-5;
+
+        //Text       
+        do Output.moveCursor(2,47);
+        do Output.printString("S");
+        do Output.moveCursor(3,47);
+        do Output.printString("C");
+        do Output.moveCursor(4,47);
+        do Output.printString("O");
+        do Output.moveCursor(5,47);
+        do Output.printString("R");
+        do Output.moveCursor(6,47);
+        do Output.printString("E");
+
+        do Output.moveCursor(2,61);
+        do Output.printString("S");
+        do Output.moveCursor(3,61);
+        do Output.printString("C");
+        do Output.moveCursor(4,61);
+        do Output.printString("O");
+        do Output.moveCursor(5,61);
+        do Output.printString("R");
+        do Output.moveCursor(6,61);
+        do Output.printString("E");
+
+
+
+
+        do Output.moveCursor(2, 52);        
+        do Output.printString("Score: ");
+        do Output.moveCursor(11,49);
+        do Output.printString(" BLOCK BREAKER");
+        do Output.moveCursor(20,52);
+        do Output.printString("MORAS 2020.");
+        do Output.moveCursor(21,49);
+        do Output.printString("Borna Sirovec");
+        
+     //While-okomite linije, ostalo vodoravne
+        while(t1>10){
+        
+            do Screen.drawPixel(235,t1);
+            do Screen.drawPixel(355,t1);
+            let t1 = t1 - 1;}
+
+        while(t0>10){
+            do Screen.drawPixel(10,t0);
+            do Screen.drawPixel(215,t0);
+            let t0 = t0 -1;}
+
+        while(t2>10){
+            do Screen.drawPixel(370,t2);
+            do Screen.drawPixel(390,t2);
+            do Screen.drawPixel(480,t2);
+            do Screen.drawPixel(500,t2);
+            let t2 = t2 -1;}
+
+        do Screen.drawLine(10,10,215,10);
+        do Screen.drawLine(10,235,215,235);
+
+        do Screen.drawLine(235,10,355,10);
+        do Screen.drawLine(235,240,355,240);
+        do Screen.drawLine(235,40,355,40);
+        do Output.moveCursor(2,33);
+        do Output.printString("BLOCKS:");
+        do Screen.drawLine(235,106,355,106);
+        do Screen.drawLine(235,173,355,173);
+
+        do Screen.drawLine(370,10,500,10);
+        do Screen.drawLine(370,90,500,90);
+       
+         
+        return;
+
+    }
+
+    function void shape_block(int cx, int cy){
+        var int x,y,i,j,rest;
+        let i = 0;
+        let x = cx-2;
+        let y = cy-2;
+        
+        while(i<25){
+            let rest = (i-((i/2)*2));
+            if(rest=0){
+                do Screen.drawPixel(x+i,y);
+                do Screen.drawPixel(x+i,y+24);
+            }
+            let i = i + 1;}
+
+        let i = 1;
+        let rest = 0;
+
+        while(i<25){
+            let rest = (i-((i/2)*2));
+            if(rest=0){
+                do Screen.drawPixel(x,y+i);
+                do Screen.drawPixel(x+24,y+i);
+            }
+            let i = i + 1;}
+
+
+        return;
+    }
+
+    function void eraser(int a, int b){
+        do Screen.setColor(false);
+        do Screen.drawRectangle(a-27,b-27,a+27,b+27);
+        do Screen.setColor(true);
+        return;
+    }
+
+    function int introscreen(){
+      var int htpx,htpy,instrx,instry,randombroj;
+        var boolean flag;
+        let flag = false;
+        let htpx = 26;
+        let htpy = 10;
+        let instrx = 17;
+        let instry = 12;
+
+       
+        do Screen.drawRectangle(10,10,502,245);
+        do Screen.setColor(false);
+        do Screen.drawRectangle(12,12,500,243);
+        do Screen.setColor(true);
+        do Screen.drawLine(12,120+10,500,120+10);
+        do Screen.drawLine(12,90+10,500,90+10);
+        do Screen.drawRectangle(197,102+10,202,107+10);
+        do Screen.drawRectangle(297,102+10,302,107+10);
+        
+        do Letter.Headline();
+
+        do Output.moveCursor(htpy,htpx);
+        do Output.printString("HOW TO PLAY");
+        do Output.moveCursor(instry+1,instrx);
+        do Output.printString("Press 1/2/3 to choose a block.");
+        do Output.moveCursor(instry+3,instrx);
+        do Output.printString("  Use ARROWS to move a block.");
+        do Output.moveCursor(instry+5,instrx);
+        do Output.printString(" Press SPACE to spawn a block.");
+        do Output.moveCursor(instry+8,8);
+        while(~flag){
+            let randombroj = Keyboard.readInt("Please give me a random number and press ENTER:");
+            if(randombroj>0){
+                let flag = true;
+            }
+        }
+        
+        return randombroj;
+    }
+
+    function int play(int randomstarter){
+        var int x, score, threecounter,created,id,pressed;
+        var int a1,b1,a2,b2,a3,b3;
+        var boolean gameover;
+        var boolean flagone, flagtwo, flagthree;
+        var array ids,gameArray;
+        var int array_filler;
+        var int checker;
+        
+        
+    
+     
+
+        do Screen.clearScreen();
+        do Blocks.layout();
+
+        let x = Random.randRange(15,randomstarter) + 1;
+        let score = 0;
+        let threecounter = 1;
+        let flagone = false;
+        let flagtwo = false;
+        let flagthree = false;
+        let gameover = false;
+        let ids = Array.new(3);
+        let created = 1;
+        let checker = 0;
+
+        let a1 = 295;
+        let a2 = 295;
+        let a3 = 295;
+        let b1 = 73;
+        let b2 = 139;
+        let b3 = 206;
+        
+
+        let gameArray = Array.new(72);
+        let array_filler = 0;
+        while(array_filler<72){
+            let gameArray[array_filler] = false;
+            let array_filler = array_filler + 1;
+        }
+
+        while(~gameover){
+            while(~(threecounter>3)){
+                if(threecounter=1){
+                    let ids[0]=x;
+                    if(x=1){
+                        do One.small(a1,b1);
+                    
+                    }
+                    if(x=2){
+                        do Two.small(a1,b1);
+                    
+                    }
+                    if(x=3){
+                        do Three.small(a1,b1);
+                        
+                    }
+                    if(x=4){
+                        do Four.small(a1,b1);
+                        
+                    }
+                    if(x=5){
+                        do Five.small(a1,b1);
+                        
+                    }
+                    if(x=6){
+                        do Six.small(a1,b1);
+                    
+                    }
+                    if(x=7){
+                        do Seven.small(a1,b1);
+                        
+                    }
+                    if(x=8){
+                        do Eight.small(a1,b1);
+                        
+                    }
+                    if(x=9){
+                        do Nine.small(a1,b1);
+                        
+                    }
+                    if(x=10){
+                        do Ten.small(a1,b1);
+                    
+                    }
+                    if(x=11){
+                        do Eleven.small(a1,b1);
+                        
+                    }
+                    if(x=12){
+                        do Twelve.small(a1,b1);
+                        
+                    }
+                    if(x=13){
+                        do Thirteen.small(a1,b1);
+                         
+                    }
+                    if(x=14){
+                        do Fourteen.small(a1,b1);
+                         
+                    }
+                    if(x=15){
+                        do Fifteen.small(a1,b1);
+                        
+                    }
+                    if(x=16){
+                        do Sixteen.small(a1,b1);
+                        
+                    }
+                    let threecounter = threecounter+1;
+                    let x = Random.randRange(15,score+randomstarter) + 1;
+
+                }
+                if(threecounter=2){
+                    let ids[1]=x;
+                     if(x=1){
+                        do One.small(a2,b2);
+                    
+                    }
+                    if(x=2){
+                        do Two.small(a2,b2);
+                    
+                    }
+                    if(x=3){
+                        do Three.small(a2,b2);
+                        
+                    }
+                    if(x=4){
+                        do Four.small(a2,b2);
+                        
+                    }
+                    if(x=5){
+                        do Five.small(a2,b2);
+                        
+                    }
+                    if(x=6){
+                        do Six.small(a2,b2);
+                    
+                    }
+                    if(x=7){
+                        do Seven.small(a2,b2);
+                        
+                    }
+                    if(x=8){
+                        do Eight.small(a2,b2);
+                        
+                    }
+                    if(x=9){
+                        do Nine.small(a2,b2);
+                        
+                    }
+                    if(x=10){
+                        do Ten.small(a2,b2);
+                    
+                    }
+                    if(x=11){
+                        do Eleven.small(a2,b2);
+                        
+                    }
+                    if(x=12){
+                        do Twelve.small(a2,b2);
+                        
+                    }
+                    if(x=13){
+                        do Thirteen.small(a2,b2);
+                         
+                    }
+                    if(x=14){
+                        do Fourteen.small(a2,b2);
+                         
+                    }
+                    if(x=15){
+                        do Fifteen.small(a2,b2);
+                        
+                    }
+                    if(x=16){
+                        do Sixteen.small(a2,b2);
+                        
+                    }
+                    let threecounter = threecounter+1;
+                    let x = Random.randRange(15,score+randomstarter) + 1;
+
+                
+                }
+                if(threecounter=3){
+                    let ids[2]=x;
+                    if(x=1){
+                        do One.small(a3,b3);
+                    
+                    }
+                    if(x=2){
+                        do Two.small(a3,b3);
+                    
+                    }
+                    if(x=3){
+                        do Three.small(a3,b3);
+                        
+                    }
+                    if(x=4){
+                        do Four.small(a3,b3);
+                        
+                    }
+                    if(x=5){
+                        do Five.small(a3,b3);
+                        
+                    }
+                    if(x=6){
+                        do Six.small(a3,b3);
+                    
+                    }
+                    if(x=7){
+                        do Seven.small(a3,b3);
+                        
+                    }
+                    if(x=8){
+                        do Eight.small(a3,b3);
+                        
+                    }
+                    if(x=9){
+                        do Nine.small(a3,b3);
+                        
+                    }
+                    if(x=10){
+                        do Ten.small(a3,b3);
+                    
+                    }
+                    if(x=11){
+                        do Eleven.small(a3,b3);
+                        
+                    }
+                    if(x=12){
+                        do Twelve.small(a3,b3);
+                        
+                    }
+                    if(x=13){
+                        do Thirteen.small(a3,b3);
+                         
+                    }
+                    if(x=14){
+                        do Fourteen.small(a3,b3);
+                         
+                    }
+                    if(x=15){
+                        do Fifteen.small(a3,b3);
+                        
+                    }
+                    if(x=16){
+                        do Sixteen.small(a3,b3);
+                        
+                    }
+                    let threecounter = threecounter+1;
+                    let x = Random.randRange(15,score+randomstarter) + 1;
+
+                }
+            }
+
+
+            while(~(created>3)){
+
+                let pressed = Kbdinputs.pressed();
+                if(pressed=0){
+                    if(~flagone){
+                    if(ids[pressed] = 1){
+                        
+                        if(Blocks.isGameover(One.values(),One.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(One.values(),One.score(),gameArray))){
+                        let gameArray = One.play(15,15,gameArray);
+                        do Blocks.eraser(a1,b1);
+                        let score = score + One.score();}
+                    }
+                    if(ids[pressed] = 2){
+                        if(Blocks.isGameover(Two.values(),Two.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(Two.values(),Two.score(),gameArray))){
+                        let gameArray = Two.play(15,15,gameArray);
+                        do Blocks.eraser(a1,b1);
+                        let score = score + Two.score();}
+                    }
+                    if(ids[pressed] = 3){
+                        if(Blocks.isGameover(Three.values(),Three.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(Three.values(),Three.score(),gameArray))){
+                        let gameArray = Three.play(15,15,gameArray);
+                        do Blocks.eraser(a1,b1);
+                        let score = score + Three.score();                       }
+                    }
+                    if(ids[pressed] = 4){
+                        if(Blocks.isGameover(Four.values(),Four.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(Four.values(),Four.score(),gameArray))){
+                        let gameArray = Four.play(15,15,gameArray);
+                        do Blocks.eraser(a1,b1);
+                        let score = score + Four.score();}
+                    }
+                    if(ids[pressed] = 5){
+                        if(Blocks.isGameover(Five.values(),Five.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(Five.values(),Five.score(),gameArray))){
+                        let gameArray = Five.play(15,15,gameArray);
+                        do Blocks.eraser(a1,b1);
+                        let score = score + Five.score();}
+                    }
+                    if(ids[pressed] = 6){
+                        if(Blocks.isGameover(Six.values(),Six.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(Six.values(),Six.score(),gameArray))){
+                        let gameArray = Six.play(15,15,gameArray);
+                        do Blocks.eraser(a1,b1);
+                        let score = score + Six.score();}
+                    }
+                    if(ids[pressed] = 7){
+                        if(Blocks.isGameover(Seven.values(),Seven.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(Seven.values(),Seven.score(),gameArray))){
+                        let gameArray = Seven.play(15,15,gameArray);
+                        do Blocks.eraser(a1,b1);
+                        let score = score + Seven.score();}
+                    }
+                    if(ids[pressed] = 8){
+                        if(Blocks.isGameover(Eight.values(),Eight.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(Eight.values(),Eight.score(),gameArray))){
+                        let gameArray = Eight.play(15,15,gameArray);
+                        do Blocks.eraser(a1,b1);
+                        let score = score + Eight.score();}                        
+                    }
+                    if(ids[pressed] = 9){
+                        if(Blocks.isGameover(Nine.values(),Nine.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~Blocks.isGameover(Nine.values(),Nine.score(),gameArray)){
+                        let gameArray = Nine.play(15,15,gameArray);
+                        do Blocks.eraser(a1,b1);
+                        let score = score + Nine.score();}
+                    }
+                    if(ids[pressed] = 10){
+                        if(Blocks.isGameover(Ten.values(),Ten.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(Ten.values(),Ten.score(),gameArray))){
+                        let gameArray = Ten.play(15,15,gameArray);
+                        do Blocks.eraser(a1,b1);
+                        let score = score + Ten.score();}
+                    }
+                    if(ids[pressed] = 11){
+                        if(Blocks.isGameover(Eleven.values(),Eleven.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(Eleven.values(),Eleven.score(),gameArray))){
+                        let gameArray = Eleven.play(15,15,gameArray);
+                        do Blocks.eraser(a1,b1);
+                        let score = score + Eleven.score();}
+                    }
+                    if(ids[pressed] = 12){
+                        if(Blocks.isGameover(Twelve.values(),Twelve.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(Twelve.values(),Twelve.score(),gameArray))){
+                        let gameArray = Twelve.play(15,15,gameArray);
+                        do Blocks.eraser(a1,b1);
+                        let score = score + Twelve.score();}
+                    }
+                    if(ids[pressed] = 13){
+                        if(Blocks.isGameover(Thirteen.values(),Thirteen.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(Thirteen.values(),Thirteen.score(),gameArray))){
+                        let gameArray = Thirteen.play(15,15,gameArray);
+                        do Blocks.eraser(a1,b1);
+                        let score = score + Thirteen.score();}
+                    }
+                    if(ids[pressed] = 14){
+                        if(Blocks.isGameover(Fourteen.values(),Fourteen.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(Fourteen.values(),Fourteen.score(),gameArray))){
+                        let gameArray = Fourteen.play(15,15,gameArray);
+                        do Blocks.eraser(a1,b1);
+                        let score = score + Fourteen.score();}
+                    }
+                    if(ids[pressed] = 15){
+                        if(Blocks.isGameover(Fifteen.values(),Fifteen.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(Fifteen.values(),Fifteen.score(),gameArray))){
+                        let gameArray = Fifteen.play(15,15,gameArray);
+                        do Blocks.eraser(a1,b1);
+                        let score = score + Fifteen.score();}
+                    }
+                    if(ids[pressed] = 16){
+                        if(Blocks.isGameover(Sixteen.values(),Sixteen.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(Sixteen.values(),Sixteen.score(),gameArray))){
+                        let gameArray = Sixteen.play(15,15,gameArray);
+                        do Blocks.eraser(a1,b1);
+                        let score = Sixteen.score();}
+                    }
+                    let flagone = true;
+                    let created = created + 1;
+                    do Output.moveCursor(4,54);
+                    do Output.printInt(score);
+                    }
+                    //ako je ids[pressed] = 1 do one.play pa eraser na a1b1
+                }
+                if(pressed=1){
+                    if (~flagtwo){
+                     if(ids[pressed] = 1){
+                        if(Blocks.isGameover(One.values(),One.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        let gameArray = One.play(15,15,gameArray);
+                        do Blocks.eraser(a2,b2);                        
+                        let score = score + One.score();
+                    }
+                    if(ids[pressed] = 2){
+                        if(Blocks.isGameover(Two.values(),Two.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(Two.values(),Two.score(),gameArray))){
+                        let gameArray = Two.play(15,15,gameArray);
+                        do Blocks.eraser(a2,b2);
+                        let score = score + Two.score();}
+                        
+                    }
+                    if(ids[pressed] = 3){
+                        if(Blocks.isGameover(Three.values(),Three.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(Three.values(),Three.score(),gameArray))){
+                        let gameArray = Three.play(15,15,gameArray);
+                        do Blocks.eraser(a2,b2);
+                        let score = score + Three.score();}
+                    }
+                    if(ids[pressed] = 4){
+                        if(Blocks.isGameover(Four.values(),Four.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(Four.values(),Four.score(),gameArray))){
+                        let gameArray = Four.play(15,15,gameArray);
+                        do Blocks.eraser(a2,b2);
+                        let score = score + Four.score();}
+
+                    }
+                    if(ids[pressed] = 5){
+                        if(Blocks.isGameover(Five.values(),Five.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(Five.values(),Five.score(),gameArray))){
+                        let gameArray = Five.play(15,15,gameArray);
+                        do Blocks.eraser(a2,b2);
+                        let score = score + Five.score();}
+                    }
+                    if(ids[pressed] = 6){
+                        if(Blocks.isGameover(Six.values(),Six.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(Six.values(),Six.score(),gameArray))){
+                        let gameArray = Six.play(15,15,gameArray);
+                        do Blocks.eraser(a2,b2);
+                        let score = score + Six.score();}
+                    }
+                    if(ids[pressed] = 7){
+                        if(Blocks.isGameover(Seven.values(),Seven.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(Seven.values(),Seven.score(),gameArray))){
+                        let gameArray = Seven.play(15,15,gameArray);
+                        do Blocks.eraser(a2,b2);
+                        let score = score + Seven.score();}
+                    }
+                    if(ids[pressed] = 8){
+                        if(Blocks.isGameover(Eight.values(),Eight.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(Eight.values(),Eight.score(),gameArray))){
+                        let gameArray = Eight.play(15,15,gameArray);
+                        do Blocks.eraser(a2,b2);
+                        let score = score + Eight.score();}                        
+                    }
+                    if(ids[pressed] = 9){
+                        if(Blocks.isGameover(Nine.values(),Nine.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~Blocks.isGameover(Nine.values(),Nine.score(),gameArray)){
+                        let gameArray = Nine.play(15,15,gameArray);
+                        do Blocks.eraser(a2,b2);
+                        let score = score + Nine.score();}
+                    }
+                    if(ids[pressed] = 10){
+                        if(Blocks.isGameover(Ten.values(),Ten.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(Ten.values(),Ten.score(),gameArray))){
+                        let gameArray = Ten.play(15,15,gameArray);
+                        do Blocks.eraser(a2,b2);
+                        let score = score + Ten.score();}
+                    }
+                    if(ids[pressed] = 11){
+                        if(Blocks.isGameover(Eleven.values(),Eleven.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(Eleven.values(),Eleven.score(),gameArray))){
+                        let gameArray = Eleven.play(15,15,gameArray);
+                        do Blocks.eraser(a2,b2);
+                        let score = score + Eleven.score();}
+                    }
+                    if(ids[pressed] = 12){
+                        if(Blocks.isGameover(Twelve.values(),Twelve.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(Twelve.values(),Twelve.score(),gameArray))){
+                        let gameArray = Twelve.play(15,15,gameArray);
+                        do Blocks.eraser(a2,b2);
+                        let score = score + Twelve.score();}
+                    }
+                    if(ids[pressed] = 13){
+                        if(Blocks.isGameover(Thirteen.values(),Thirteen.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(Thirteen.values(),Thirteen.score(),gameArray))){
+                        let gameArray = Thirteen.play(15,15,gameArray);
+                        do Blocks.eraser(a2,b2);
+                        let score = score + Thirteen.score();}
+                    }
+                    if(ids[pressed] = 14){
+                        if(Blocks.isGameover(Fourteen.values(),Fourteen.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(Fourteen.values(),Fourteen.score(),gameArray))){
+                        let gameArray = Fourteen.play(15,15,gameArray);
+                        do Blocks.eraser(a2,b2);
+                        let score = score + Fourteen.score();}
+                    }
+                    if(ids[pressed] = 15){
+                        if(Blocks.isGameover(Fifteen.values(),Fifteen.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(Fifteen.values(),Fifteen.score(),gameArray))){
+                        let gameArray = Fifteen.play(15,15,gameArray);
+                        do Blocks.eraser(a2,b2);
+                        let score = score + Fifteen.score();}
+                    }
+                    if(ids[pressed] = 16){
+                        if(Blocks.isGameover(Sixteen.values(),Sixteen.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(Sixteen.values(),Sixteen.score(),gameArray))){
+                        let gameArray = Sixteen.play(15,15,gameArray);
+                        do Blocks.eraser(a2,b2);
+                        let score = score + Sixteen.score();}
+                    }
+                    let flagtwo = true;
+                    let created = created + 1;
+                    do Output.moveCursor(4,54);
+                    do Output.printInt(score);
+                    }
+                   
+                    //ako je ids[pressed] = 1 do one.play pa eraser na a2b2
+                }
+                if(pressed=2){
+                    if(~flagthree){
+                     if(ids[pressed] = 1){
+                        if(Blocks.isGameover(One.values(),One.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        let gameArray = One.play(15,15,gameArray);
+                        do Blocks.eraser(a3,b3);
+                        let score = score + One.score(); 
+                    }
+                    if(ids[pressed] = 2){
+                        if(Blocks.isGameover(Two.values(),Two.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(Two.values(),Two.score(),gameArray))){
+                        let gameArray = Two.play(15,15,gameArray);
+                        do Blocks.eraser(a3,b3);
+                        let score = score + Two.score();}
+                    }
+                    if(ids[pressed] = 3){
+                        if(Blocks.isGameover(Three.values(),Three.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(Three.values(),Three.score(),gameArray))){
+                        let gameArray = Three.play(15,15,gameArray);
+                        do Blocks.eraser(a3,b3);
+                        let score = score + Three.score();}
+                    }
+                    if(ids[pressed] = 4){
+                        if(Blocks.isGameover(Four.values(),Four.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(Four.values(),Four.score(),gameArray))){
+                        let gameArray = Four.play(15,15,gameArray);
+                        do Blocks.eraser(a3,b3);
+                        let score = score + Four.score();}
+                    }
+                    if(ids[pressed] = 5){
+                        if(Blocks.isGameover(Five.values(),Five.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(Five.values(),Five.score(),gameArray))){
+                        let gameArray = Five.play(15,15,gameArray);
+                        do Blocks.eraser(a3,b3);
+                        let score = score + Five.score();}
+                    }
+                    if(ids[pressed] = 6){
+                        if(Blocks.isGameover(Six.values(),Six.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(Six.values(),Six.score(),gameArray))){
+                        let gameArray = Six.play(15,15,gameArray);
+                        do Blocks.eraser(a3,b3);
+                        let score = score + Six.score();}
+                    }
+                    if(ids[pressed] = 7){
+                        if(Blocks.isGameover(Seven.values(),Seven.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(Seven.values(),Seven.score(),gameArray))){
+                        let gameArray = Seven.play(15,15,gameArray);
+                        do Blocks.eraser(a3,b3);
+                        let score = score + Seven.score();}
+                    }
+                    if(ids[pressed] = 8){
+                        if(Blocks.isGameover(Eight.values(),Eight.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(Eight.values(),Eight.score(),gameArray))){
+                        let gameArray = Eight.play(15,15,gameArray);
+                        do Blocks.eraser(a3,b3);
+                        let score = score + Eight.score();}                        
+
+                    }
+                    if(ids[pressed] = 9){
+                        if(Blocks.isGameover(Nine.values(),Nine.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~Blocks.isGameover(Nine.values(),Nine.score(),gameArray)){
+                        let gameArray = Nine.play(15,15,gameArray);
+                        do Blocks.eraser(a3,b3);
+                        let score = score + Nine.score();}
+                    }
+                    if(ids[pressed] = 10){
+                        if(Blocks.isGameover(Ten.values(),Ten.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(Ten.values(),Ten.score(),gameArray))){
+                        let gameArray = Ten.play(15,15,gameArray);
+                        do Blocks.eraser(a3,b3);
+                        let score = score + Ten.score();}
+                    }
+                    if(ids[pressed] = 11){
+                        if(Blocks.isGameover(Eleven.values(),Eleven.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(Eleven.values(),Eleven.score(),gameArray))){
+                        let gameArray = Eleven.play(15,15,gameArray);
+                        do Blocks.eraser(a3,b3);
+                        let score = score + Eleven.score();}
+                    }
+                    if(ids[pressed] = 12){
+                        if(Blocks.isGameover(Twelve.values(),Twelve.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(Twelve.values(),Twelve.score(),gameArray))){
+                        let gameArray = Twelve.play(15,15,gameArray);
+                        do Blocks.eraser(a3,b3);
+                        let score = score + Twelve.score();}
+                    }
+                    if(ids[pressed] = 13){
+                        if(Blocks.isGameover(Thirteen.values(),Thirteen.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(Thirteen.values(),Thirteen.score(),gameArray))){
+                        let gameArray = Thirteen.play(15,15,gameArray);
+                        do Blocks.eraser(a3,b3);
+                        let score = score + Thirteen.score();}
+                    }
+                    if(ids[pressed] = 14){
+                        if(Blocks.isGameover(Fourteen.values(),Fourteen.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(Fourteen.values(),Fourteen.score(),gameArray))){
+                        let gameArray = Fourteen.play(15,15,gameArray);
+                        do Blocks.eraser(a3,b3);
+                        let score = score + Fourteen.score();}
+                    }
+                    if(ids[pressed] = 15){
+                        if(Blocks.isGameover(Fifteen.values(),Fifteen.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(Fifteen.values(),Fifteen.score(),gameArray))){
+                        let gameArray = Fifteen.play(15,15,gameArray);
+                        do Blocks.eraser(a3,b3);
+                        let score = score + Fifteen.score();}
+                    }
+                    if(ids[pressed] = 16){
+                        if(Blocks.isGameover(Sixteen.values(),Sixteen.score(),gameArray)){
+                            let gameover = true;
+                        }
+                        if(~(Blocks.isGameover(Sixteen.values(),Sixteen.score(),gameArray))){
+                        let gameArray = Sixteen.play(15,15,gameArray);
+                        do Blocks.eraser(a3,b3);
+                        let score = score + Sixteen.score();}
+                    }
+                    let flagthree = true;
+                    let created = created + 1;
+                    do Output.moveCursor(4,54);
+                    do Output.printInt(score);
+                    }
+                    
+
+                    //ako je ids[2]  = 1 do one.play pa eraser na a3b3
+                }
+
+                let gameArray = Blocks.check_rows(gameArray);
+                let gameArray = Blocks.check_cols(gameArray);
+               
+
+                
+
+               if(gameover){
+                   let created = 4;
+               }
+               
+               
+            }
+
+            
+
+            let threecounter= 1;
+            let created = 1;
+            
+            let flagone = false;
+            let flagtwo = false;
+            let flagthree = false;
+            }
+        
+
+        
+        
+        return score;
+    }
+
+    function void overscreen(int score){
+        do Screen.clearScreen();
+        do Letter.Gameover();
+        do Screen.drawRectangle(20,100,492,103);
+        do Output.moveCursor(10,21);
+        do Output.printString("Your score was: ");
+        do Output.printInt(score);
+
+        return;
+    }
+
+    function boolean isGameover(array values,int size, array grid){
+        var boolean flag;
+        var int x;
+        let flag = true;
+        while(x<72){
+            if(Blocks.isDrawable(values, size, x, grid)){
+                let flag = false;
+        
+            }
+            let x = x + 1;
+        }
+
+        return flag;
+    }
+
+    function boolean isDrawable(array values,int size,int c_a_p, array grid){
+        var int i,free;
+        var boolean x;
+        let i = 0;
+        let free = 0;
+        let x = false;
+        while(i<size){
+            if(grid[c_a_p+values[i]]=false){
+                let free = free + 1;
+
+            }
+            let i = i + 1;
+        }
+        if(free=size){
+           let x = true;
+        }
+        return x;
+    }
+
+    function array gridDraw(array values,int size,int c_a_p, array grid){
+        var int i;
+        let i = 0;
+        while(i<size){
+            let grid[c_a_p+values[i]]=true;
+            let i = i + 1;
+        }
+        
+        return grid;
+    }
+
+    function boolean is_row_full(array gameArray, int which_row){
+        var int j;
+        var boolean to_return;
+        let j = 0;
+        while(j<8){
+            let to_return = gameArray[(which_row*8)+j];
+            let j = j + 1;
+            if(~to_return){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    function boolean is_col_full(array gameArray, int which_col){
+        var int j;
+        var boolean to_return;
+        let j = 0;
+        while(j<72){
+            let to_return = gameArray[(which_col) + j];
+            let j = j + 8;
+            if(~to_return){
+                return false;
+            }
+        }
+        return true;
+    }  
+
+    function array check_rows(array gameArray){
+        var int x;
+        let x = 0;
+        while(x<9){
+            let gameArray = Blocks.deleterow(gameArray,x);
+            let x = x + 1;
+        }
+        return gameArray;
+    }
+
+    function array check_cols(array gameArray){
+        var int x;
+        let x = 0;
+        while(x<8){
+            let gameArray = Blocks.deletecol(gameArray,x);
+            let x = x + 1;
+        }
+        return gameArray;
+    }
+
+    function array deleterow(array gameArray, int x){        
+            var int x1,y1,x2,y2,j;
+            if(Blocks.is_row_full(gameArray,x)){
+            let x1 = 15;
+            let x2 = 207;
+            let y1 = 13+(x*24);
+            let y2 = 13+((x+1)*24);
+            do Screen.setColor(false);
+            do Screen.drawRectangle(x1,y1,x2,y2);
+            do Screen.setColor(true);
+
+            let j = 0;
+            while(j<8){
+                let gameArray[(x*8)+j] = false;
+                let j = j + 1;
+            }}
+
+            return gameArray;
+    }
+
+    function array deletecol(array gameArray, int x){
+            var int x1,y1,x2,y2,j;
+            if(Blocks.is_col_full(gameArray,x)){
+            let x1 = 13+(x*24);
+            let x2 = 13+((x+1)*24);
+            let y1 = 13;
+            let y2 = 231;
+            do Screen.setColor(false);
+            do Screen.drawRectangle(x1,y1,x2,y2);
+            do Screen.setColor(true);
+
+            let j = 0;
+            while(j<72){
+                let gameArray[x+j] = false;
+                let j = j + 8;
+            }}
+
+            return gameArray;
+        }
+    }

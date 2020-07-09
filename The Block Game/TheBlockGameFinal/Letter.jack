@@ -1,0 +1,295 @@
+class Letter{
+    function void okomitoPet(int a, int b){
+        var int x,y,y1,y2,y3,y4;
+        let x = a;
+        let y = b;
+
+        let y1 = b+7;
+        let y2 = b+14;
+        let y3 = b+21;
+        let y4 = b+28;
+
+        do Screen.drawRectangle(x,y,x+5,y+5);
+        do Screen.drawRectangle(x,y1,x+5,y1+5);
+        do Screen.drawRectangle(x,y2,x+5,y2+5);
+        do Screen.drawRectangle(x,y3,x+5,y3+5);
+        do Screen.drawRectangle(x,y4,x+5,y4+5);
+        return;
+    }
+
+    function void okomitoTri(int a, int b){
+        var int x,y,y1,y2;
+        let x = a;
+        let y = b;
+
+        let y1 = b+7;
+        let y2 = b+14;
+
+        do Screen.drawRectangle(x,y,x+5,y+5);
+        do Screen.drawRectangle(x,y1,x+5,y1+5);
+        do Screen.drawRectangle(x,y2,x+5,y2+5);
+        return;
+    }
+
+    function void vodoravnoPet(int a, int b){
+        var int x,y,x1,x2,x3,x4;
+        let x = a;
+        let y = b;
+
+        let x1 = a+7;
+        let x2 = a+14;
+        let x3 = a+21;
+        let x4 = a+28;
+
+        do Screen.drawRectangle(x,y,x+5,y+5);
+        do Screen.drawRectangle(x1,y,x1+5,y+5);
+        do Screen.drawRectangle(x2,y,x2+5,y+5);
+        do Screen.drawRectangle(x3,y,x3+5,y+5);
+        do Screen.drawRectangle(x4,y,x4+5,y+5);
+        return;
+    }
+
+    function void vodoravnoCetiri(int a, int b){
+        var int x,y,x1,x2,x3;
+        let x = a;
+        let y = b;
+
+        let x1 = a+7;
+        let x2 = a+14;
+        let x3 = a+21;
+
+        do Screen.drawRectangle(x,y,x+5,y+5);
+        do Screen.drawRectangle(x1,y,x1+5,y+5);
+        do Screen.drawRectangle(x2,y,x2+5,y+5);
+        do Screen.drawRectangle(x3,y,x3+5,y+5);
+        return;
+    }
+
+    function void vodoravnoTri(int a, int b){
+        var int x,y,x1,x2;
+        let x = a;
+        let y = b;
+
+        let x1 = a+7;
+        let x2 = a+14;
+        do Screen.drawRectangle(x,y,x+5,y+5);
+        do Screen.drawRectangle(x1,y,x1+5,y+5);
+        do Screen.drawRectangle(x2,y,x2+5,y+5);
+        return;
+    }
+
+    function void vodoravnoDva(int a, int b){
+        var int x,y,x1;
+        let x = a;
+        let y = b;
+
+        let x1 = a+7;
+        do Screen.drawRectangle(x,y,x+5,y+5);
+        do Screen.drawRectangle(x1,y,x1+5,y+5);
+        return;
+    }
+
+
+    function void T(int a, int b){
+        var int x,y;
+        let x = a;
+        let y = b;
+
+        do Letter.vodoravnoPet(x,y);
+        do Letter.okomitoPet(x+14,y);
+        return;    
+
+    }
+
+    function void H(int a, int b){
+        var int x,y;
+
+        let x = a;
+        let y = b;
+
+        do Letter.okomitoPet(x,y);
+        do Letter.vodoravnoCetiri(x,y+14);
+        do Letter.okomitoPet(x+21,y);
+        return;
+    }
+
+    function void E(int a, int b){
+        var int x,y;
+        let x = a;
+        let y = b;
+
+        do Letter.okomitoPet(x,y);
+        do Letter.vodoravnoCetiri(x,y);
+        do Letter.vodoravnoTri(x,y+14);
+        do Letter.vodoravnoCetiri(x,y+28);
+        return;
+    }
+
+    function void B(int a,vint b){   
+        var int x,y;
+        let x = a;
+        let y = b;
+        
+        do Letter.okomitoPet(x,y);
+        do Letter.vodoravnoTri(x,y);
+        do Letter.vodoravnoTri(x,y+14);
+        do Letter.vodoravnoTri(x,y+28);
+        do Screen.drawRectangle(x+21,y+7,x+26,y+12);
+        do Screen.drawRectangle(x+21,y+21,x+26,y+26);
+        
+        return;   
+    }
+
+    function void L(int a, int b){
+        var int x,y;
+        let x = a;
+        let y = b;
+
+        do Letter.okomitoPet(x,y);
+        do Letter.vodoravnoTri(x,y+28);
+        return;
+    }
+
+    function void O(int a, int b){
+        var int x,y;
+        let x = a;
+        let y = b;
+
+        do Letter.okomitoPet(x,y);
+        do Letter.okomitoPet(x+21,y);
+        do Letter.vodoravnoCetiri(x,y);
+        do Letter.vodoravnoCetiri(x,y+28);
+        return;
+    }
+
+    function void C(int a, int b){
+        var int x,y;
+        let x = a;
+        let y = b;
+
+        do Letter.okomitoPet(x,y);
+        do Letter.vodoravnoTri(x,y);
+        do Letter.vodoravnoTri(x,y+28);
+        return;
+    }
+    
+    function void K(int a, int b){
+        var int x,y;
+        let x = a;
+        let y = b;
+        
+        do Letter.okomitoPet(x,y);
+        do Screen.drawRectangle(x+7,y+14,x+12,y+19);
+        do Screen.drawRectangle(x+14,y+7,x+19,y+12);
+        do Screen.drawRectangle(x+14,y+21,x+19,y+26);
+        do Screen.drawRectangle(x+21,y,x+26,y+5);
+        do Screen.drawRectangle(x+21,y+28,x+26,y+33);
+        return;
+    }
+
+    function void G(int a, int b){
+        var int x,y;
+        let x = a;
+        let y = b;
+
+        do Letter.okomitoPet(x,y);
+        do Letter.vodoravnoCetiri(x,y);
+        do Letter.vodoravnoCetiri(x,y+28);
+        do Letter.vodoravnoDva(x+14,y+14);
+        do Screen.drawRectangle(x+21,y+21,x+26,y+26);
+
+        return;
+    }
+
+    function void A(int a, int b){
+        var int x,y;
+        let x = a;
+        let y = b;
+
+        do Letter.okomitoPet(x,y);
+        do Letter.okomitoPet(x+21,y);
+        do Letter.vodoravnoCetiri(x,y);
+        do Letter.vodoravnoCetiri(x,y+14);
+        return;
+    }
+
+    function void M(int a, int b){
+        var int x,y;
+        let x = a;
+        let y = b;
+
+        do Letter.okomitoPet(x,y);
+        do Letter.okomitoPet(x+28,y);
+        do Screen.drawRectangle(x+7,y+7,x+12,y+12);
+        do Screen.drawRectangle(x+14,y+14,x+19,y+19);
+        do Screen.drawRectangle(x+21,y+7,x+26,y+12);
+        return;
+    }
+
+    function void V(int a, int b){
+        var int x,y;
+        let x = a;
+        let y = b;
+
+        do Letter.okomitoTri(x,y);
+        do Letter.okomitoTri(x+28,y);
+        do Screen.drawRectangle(x+7,y+21,x+12,y+26);
+        do Screen.drawRectangle(x+21,y+21,x+26,y+26);
+        do Screen.drawRectangle(x+14,y+28,x+19,y+33);
+        return;
+    }
+
+    function void R(int a, int b){
+        var int x,y;
+        let x = a;
+        let y = b;
+        do Letter.okomitoPet(x,y);
+        do Letter.okomitoTri(x+21,y);
+        do Letter.vodoravnoCetiri(x,y);
+        do Letter.vodoravnoCetiri(x,y+14);
+        do Screen.drawRectangle(x+14,y+21,x+19,y+26);
+        do Screen.drawRectangle(x+21,y+28,x+26,y+33);
+        return;
+    }
+    
+    function void Headline(){
+    var int x,y;
+        let x = 60;
+        let y = 30;
+        do Letter.T(x,y);
+        do Letter.H(x+37+2,y);
+        do Letter.E(x+67+4,y);
+
+        do Letter.B(x+107+6,y);
+        do Letter.L(x+137+8,y);
+        do Letter.O(x+160+10,y);
+        do Letter.C(x+190+12,y);
+        do Letter.K(x+213+14,y);
+        
+        do Letter.G(x+253+16,y);
+        do Letter.A(x+283+18,y);
+        do Letter.M(x+313+20,y);
+        do Letter.E(x+348+22,y);
+    
+        return;           
+    }
+
+    function void Gameover(){
+        var int x,y;
+        let x = 100;
+        let y = 50;
+
+        do Letter.G(x,y);
+        do Letter.A(x+39-3,y);
+        do Letter.M(x+71,y);
+        do Letter.E(x+106+5,y);
+
+        do Letter.O(x+150+5,y);
+        do Letter.V(x+180+10,y);
+        do Letter.E(x+210+20,y);
+        do Letter.R(x+240+25,y);
+
+    
+        return;
+        }
+    }

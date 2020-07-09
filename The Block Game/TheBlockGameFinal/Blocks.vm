@@ -1,0 +1,4255 @@
+function Blocks.layout 8
+push constant 240
+pop local 0
+push constant 90
+pop local 1
+push constant 15
+pop local 2
+push constant 15
+pop local 4
+push constant 35
+pop local 3
+push constant 35
+pop local 5
+push local 0
+push constant 5
+sub
+pop local 6
+push constant 2
+push constant 47
+call Output.moveCursor 2
+pop temp 0
+push constant 1
+call String.new 1
+push constant 83
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+push constant 3
+push constant 47
+call Output.moveCursor 2
+pop temp 0
+push constant 1
+call String.new 1
+push constant 67
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+push constant 4
+push constant 47
+call Output.moveCursor 2
+pop temp 0
+push constant 1
+call String.new 1
+push constant 79
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+push constant 5
+push constant 47
+call Output.moveCursor 2
+pop temp 0
+push constant 1
+call String.new 1
+push constant 82
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+push constant 6
+push constant 47
+call Output.moveCursor 2
+pop temp 0
+push constant 1
+call String.new 1
+push constant 69
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+push constant 2
+push constant 61
+call Output.moveCursor 2
+pop temp 0
+push constant 1
+call String.new 1
+push constant 83
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+push constant 3
+push constant 61
+call Output.moveCursor 2
+pop temp 0
+push constant 1
+call String.new 1
+push constant 67
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+push constant 4
+push constant 61
+call Output.moveCursor 2
+pop temp 0
+push constant 1
+call String.new 1
+push constant 79
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+push constant 5
+push constant 61
+call Output.moveCursor 2
+pop temp 0
+push constant 1
+call String.new 1
+push constant 82
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+push constant 6
+push constant 61
+call Output.moveCursor 2
+pop temp 0
+push constant 1
+call String.new 1
+push constant 69
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+push constant 2
+push constant 52
+call Output.moveCursor 2
+pop temp 0
+push constant 7
+call String.new 1
+push constant 83
+call String.appendChar 2
+push constant 99
+call String.appendChar 2
+push constant 111
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 58
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+push constant 11
+push constant 49
+call Output.moveCursor 2
+pop temp 0
+push constant 14
+call String.new 1
+push constant 32
+call String.appendChar 2
+push constant 66
+call String.appendChar 2
+push constant 76
+call String.appendChar 2
+push constant 79
+call String.appendChar 2
+push constant 67
+call String.appendChar 2
+push constant 75
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 66
+call String.appendChar 2
+push constant 82
+call String.appendChar 2
+push constant 69
+call String.appendChar 2
+push constant 65
+call String.appendChar 2
+push constant 75
+call String.appendChar 2
+push constant 69
+call String.appendChar 2
+push constant 82
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+push constant 20
+push constant 52
+call Output.moveCursor 2
+pop temp 0
+push constant 11
+call String.new 1
+push constant 77
+call String.appendChar 2
+push constant 79
+call String.appendChar 2
+push constant 82
+call String.appendChar 2
+push constant 65
+call String.appendChar 2
+push constant 83
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 50
+call String.appendChar 2
+push constant 48
+call String.appendChar 2
+push constant 50
+call String.appendChar 2
+push constant 48
+call String.appendChar 2
+push constant 46
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+push constant 21
+push constant 49
+call Output.moveCursor 2
+pop temp 0
+push constant 13
+call String.new 1
+push constant 66
+call String.appendChar 2
+push constant 111
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 110
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 83
+call String.appendChar 2
+push constant 105
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 111
+call String.appendChar 2
+push constant 118
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 99
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+label WHILE_EXP0
+push local 0
+push constant 10
+gt
+not
+if-goto WHILE_END0
+push constant 235
+push local 0
+call Screen.drawPixel 2
+pop temp 0
+push constant 355
+push local 0
+call Screen.drawPixel 2
+pop temp 0
+push local 0
+push constant 1
+sub
+pop local 0
+goto WHILE_EXP0
+label WHILE_END0
+label WHILE_EXP1
+push local 6
+push constant 10
+gt
+not
+if-goto WHILE_END1
+push constant 10
+push local 6
+call Screen.drawPixel 2
+pop temp 0
+push constant 215
+push local 6
+call Screen.drawPixel 2
+pop temp 0
+push local 6
+push constant 1
+sub
+pop local 6
+goto WHILE_EXP1
+label WHILE_END1
+label WHILE_EXP2
+push local 1
+push constant 10
+gt
+not
+if-goto WHILE_END2
+push constant 370
+push local 1
+call Screen.drawPixel 2
+pop temp 0
+push constant 390
+push local 1
+call Screen.drawPixel 2
+pop temp 0
+push constant 480
+push local 1
+call Screen.drawPixel 2
+pop temp 0
+push constant 500
+push local 1
+call Screen.drawPixel 2
+pop temp 0
+push local 1
+push constant 1
+sub
+pop local 1
+goto WHILE_EXP2
+label WHILE_END2
+push constant 10
+push constant 10
+push constant 215
+push constant 10
+call Screen.drawLine 4
+pop temp 0
+push constant 10
+push constant 235
+push constant 215
+push constant 235
+call Screen.drawLine 4
+pop temp 0
+push constant 235
+push constant 10
+push constant 355
+push constant 10
+call Screen.drawLine 4
+pop temp 0
+push constant 235
+push constant 240
+push constant 355
+push constant 240
+call Screen.drawLine 4
+pop temp 0
+push constant 235
+push constant 40
+push constant 355
+push constant 40
+call Screen.drawLine 4
+pop temp 0
+push constant 2
+push constant 33
+call Output.moveCursor 2
+pop temp 0
+push constant 7
+call String.new 1
+push constant 66
+call String.appendChar 2
+push constant 76
+call String.appendChar 2
+push constant 79
+call String.appendChar 2
+push constant 67
+call String.appendChar 2
+push constant 75
+call String.appendChar 2
+push constant 83
+call String.appendChar 2
+push constant 58
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+push constant 235
+push constant 106
+push constant 355
+push constant 106
+call Screen.drawLine 4
+pop temp 0
+push constant 235
+push constant 173
+push constant 355
+push constant 173
+call Screen.drawLine 4
+pop temp 0
+push constant 370
+push constant 10
+push constant 500
+push constant 10
+call Screen.drawLine 4
+pop temp 0
+push constant 370
+push constant 90
+push constant 500
+push constant 90
+call Screen.drawLine 4
+pop temp 0
+push constant 0
+return
+function Blocks.shape_block 5
+push constant 0
+pop local 2
+push argument 0
+push constant 2
+sub
+pop local 0
+push argument 1
+push constant 2
+sub
+pop local 1
+label WHILE_EXP0
+push local 2
+push constant 25
+lt
+not
+if-goto WHILE_END0
+push local 2
+push local 2
+push constant 2
+call Math.divide 2
+push constant 2
+call Math.multiply 2
+sub
+pop local 4
+push local 4
+push constant 0
+eq
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push local 0
+push local 2
+add
+push local 1
+call Screen.drawPixel 2
+pop temp 0
+push local 0
+push local 2
+add
+push local 1
+push constant 24
+add
+call Screen.drawPixel 2
+pop temp 0
+label IF_FALSE0
+push local 2
+push constant 1
+add
+pop local 2
+goto WHILE_EXP0
+label WHILE_END0
+push constant 1
+pop local 2
+push constant 0
+pop local 4
+label WHILE_EXP1
+push local 2
+push constant 25
+lt
+not
+if-goto WHILE_END1
+push local 2
+push local 2
+push constant 2
+call Math.divide 2
+push constant 2
+call Math.multiply 2
+sub
+pop local 4
+push local 4
+push constant 0
+eq
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push local 0
+push local 1
+push local 2
+add
+call Screen.drawPixel 2
+pop temp 0
+push local 0
+push constant 24
+add
+push local 1
+push local 2
+add
+call Screen.drawPixel 2
+pop temp 0
+label IF_FALSE1
+push local 2
+push constant 1
+add
+pop local 2
+goto WHILE_EXP1
+label WHILE_END1
+push constant 0
+return
+function Blocks.eraser 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push argument 0
+push constant 27
+sub
+push argument 1
+push constant 27
+sub
+push argument 0
+push constant 27
+add
+push argument 1
+push constant 27
+add
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 0
+return
+function Blocks.introscreen 6
+push constant 0
+pop local 5
+push constant 26
+pop local 0
+push constant 10
+pop local 1
+push constant 17
+pop local 2
+push constant 12
+pop local 3
+push constant 10
+push constant 10
+push constant 502
+push constant 245
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 12
+push constant 12
+push constant 500
+push constant 243
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 12
+push constant 120
+push constant 10
+add
+push constant 500
+push constant 120
+push constant 10
+add
+call Screen.drawLine 4
+pop temp 0
+push constant 12
+push constant 90
+push constant 10
+add
+push constant 500
+push constant 90
+push constant 10
+add
+call Screen.drawLine 4
+pop temp 0
+push constant 197
+push constant 102
+push constant 10
+add
+push constant 202
+push constant 107
+push constant 10
+add
+call Screen.drawRectangle 4
+pop temp 0
+push constant 297
+push constant 102
+push constant 10
+add
+push constant 302
+push constant 107
+push constant 10
+add
+call Screen.drawRectangle 4
+pop temp 0
+call Letter.Headline 0
+pop temp 0
+push local 1
+push local 0
+call Output.moveCursor 2
+pop temp 0
+push constant 11
+call String.new 1
+push constant 72
+call String.appendChar 2
+push constant 79
+call String.appendChar 2
+push constant 87
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 84
+call String.appendChar 2
+push constant 79
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 80
+call String.appendChar 2
+push constant 76
+call String.appendChar 2
+push constant 65
+call String.appendChar 2
+push constant 89
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+push local 3
+push constant 1
+add
+push local 2
+call Output.moveCursor 2
+pop temp 0
+push constant 30
+call String.new 1
+push constant 80
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 49
+call String.appendChar 2
+push constant 47
+call String.appendChar 2
+push constant 50
+call String.appendChar 2
+push constant 47
+call String.appendChar 2
+push constant 51
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 111
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 99
+call String.appendChar 2
+push constant 104
+call String.appendChar 2
+push constant 111
+call String.appendChar 2
+push constant 111
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 98
+call String.appendChar 2
+push constant 108
+call String.appendChar 2
+push constant 111
+call String.appendChar 2
+push constant 99
+call String.appendChar 2
+push constant 107
+call String.appendChar 2
+push constant 46
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+push local 3
+push constant 3
+add
+push local 2
+call Output.moveCursor 2
+pop temp 0
+push constant 29
+call String.new 1
+push constant 32
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 85
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 65
+call String.appendChar 2
+push constant 82
+call String.appendChar 2
+push constant 82
+call String.appendChar 2
+push constant 79
+call String.appendChar 2
+push constant 87
+call String.appendChar 2
+push constant 83
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 111
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 109
+call String.appendChar 2
+push constant 111
+call String.appendChar 2
+push constant 118
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 98
+call String.appendChar 2
+push constant 108
+call String.appendChar 2
+push constant 111
+call String.appendChar 2
+push constant 99
+call String.appendChar 2
+push constant 107
+call String.appendChar 2
+push constant 46
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+push local 3
+push constant 5
+add
+push local 2
+call Output.moveCursor 2
+pop temp 0
+push constant 30
+call String.new 1
+push constant 32
+call String.appendChar 2
+push constant 80
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 83
+call String.appendChar 2
+push constant 80
+call String.appendChar 2
+push constant 65
+call String.appendChar 2
+push constant 67
+call String.appendChar 2
+push constant 69
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 116
+call String.appendChar 2
+push constant 111
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 112
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 119
+call String.appendChar 2
+push constant 110
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 98
+call String.appendChar 2
+push constant 108
+call String.appendChar 2
+push constant 111
+call String.appendChar 2
+push constant 99
+call String.appendChar 2
+push constant 107
+call String.appendChar 2
+push constant 46
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+push local 3
+push constant 8
+add
+push constant 8
+call Output.moveCursor 2
+pop temp 0
+label WHILE_EXP0
+push local 5
+not
+not
+if-goto WHILE_END0
+push constant 47
+call String.new 1
+push constant 80
+call String.appendChar 2
+push constant 108
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 103
+call String.appendChar 2
+push constant 105
+call String.appendChar 2
+push constant 118
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 109
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 110
+call String.appendChar 2
+push constant 100
+call String.appendChar 2
+push constant 111
+call String.appendChar 2
+push constant 109
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 110
+call String.appendChar 2
+push constant 117
+call String.appendChar 2
+push constant 109
+call String.appendChar 2
+push constant 98
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 110
+call String.appendChar 2
+push constant 100
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 112
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 69
+call String.appendChar 2
+push constant 78
+call String.appendChar 2
+push constant 84
+call String.appendChar 2
+push constant 69
+call String.appendChar 2
+push constant 82
+call String.appendChar 2
+push constant 58
+call String.appendChar 2
+call Keyboard.readInt 1
+pop local 4
+push local 4
+push constant 0
+gt
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 0
+not
+pop local 5
+label IF_FALSE0
+goto WHILE_EXP0
+label WHILE_END0
+push local 4
+return
+function Blocks.play 20
+call Screen.clearScreen 0
+pop temp 0
+call Blocks.layout 0
+pop temp 0
+push constant 15
+push argument 0
+call Random.randRange 2
+push constant 1
+add
+pop local 0
+push constant 0
+pop local 1
+push constant 1
+pop local 2
+push constant 0
+pop local 13
+push constant 0
+pop local 14
+push constant 0
+pop local 15
+push constant 0
+pop local 12
+push constant 3
+call Array.new 1
+pop local 16
+push constant 1
+pop local 3
+push constant 0
+pop local 19
+push constant 295
+pop local 6
+push constant 295
+pop local 8
+push constant 295
+pop local 10
+push constant 73
+pop local 7
+push constant 139
+pop local 9
+push constant 206
+pop local 11
+push constant 72
+call Array.new 1
+pop local 17
+push constant 0
+pop local 18
+label WHILE_EXP0
+push local 18
+push constant 72
+lt
+not
+if-goto WHILE_END0
+push local 18
+push local 17
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 18
+push constant 1
+add
+pop local 18
+goto WHILE_EXP0
+label WHILE_END0
+label WHILE_EXP1
+push local 12
+not
+not
+if-goto WHILE_END1
+label WHILE_EXP2
+push local 2
+push constant 3
+gt
+not
+not
+if-goto WHILE_END2
+push local 2
+push constant 1
+eq
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 0
+push local 16
+add
+push local 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+push constant 1
+eq
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push local 6
+push local 7
+call One.small 2
+pop temp 0
+label IF_FALSE1
+push local 0
+push constant 2
+eq
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+push local 6
+push local 7
+call Two.small 2
+pop temp 0
+label IF_FALSE2
+push local 0
+push constant 3
+eq
+if-goto IF_TRUE3
+goto IF_FALSE3
+label IF_TRUE3
+push local 6
+push local 7
+call Three.small 2
+pop temp 0
+label IF_FALSE3
+push local 0
+push constant 4
+eq
+if-goto IF_TRUE4
+goto IF_FALSE4
+label IF_TRUE4
+push local 6
+push local 7
+call Four.small 2
+pop temp 0
+label IF_FALSE4
+push local 0
+push constant 5
+eq
+if-goto IF_TRUE5
+goto IF_FALSE5
+label IF_TRUE5
+push local 6
+push local 7
+call Five.small 2
+pop temp 0
+label IF_FALSE5
+push local 0
+push constant 6
+eq
+if-goto IF_TRUE6
+goto IF_FALSE6
+label IF_TRUE6
+push local 6
+push local 7
+call Six.small 2
+pop temp 0
+label IF_FALSE6
+push local 0
+push constant 7
+eq
+if-goto IF_TRUE7
+goto IF_FALSE7
+label IF_TRUE7
+push local 6
+push local 7
+call Seven.small 2
+pop temp 0
+label IF_FALSE7
+push local 0
+push constant 8
+eq
+if-goto IF_TRUE8
+goto IF_FALSE8
+label IF_TRUE8
+push local 6
+push local 7
+call Eight.small 2
+pop temp 0
+label IF_FALSE8
+push local 0
+push constant 9
+eq
+if-goto IF_TRUE9
+goto IF_FALSE9
+label IF_TRUE9
+push local 6
+push local 7
+call Nine.small 2
+pop temp 0
+label IF_FALSE9
+push local 0
+push constant 10
+eq
+if-goto IF_TRUE10
+goto IF_FALSE10
+label IF_TRUE10
+push local 6
+push local 7
+call Ten.small 2
+pop temp 0
+label IF_FALSE10
+push local 0
+push constant 11
+eq
+if-goto IF_TRUE11
+goto IF_FALSE11
+label IF_TRUE11
+push local 6
+push local 7
+call Eleven.small 2
+pop temp 0
+label IF_FALSE11
+push local 0
+push constant 12
+eq
+if-goto IF_TRUE12
+goto IF_FALSE12
+label IF_TRUE12
+push local 6
+push local 7
+call Twelve.small 2
+pop temp 0
+label IF_FALSE12
+push local 0
+push constant 13
+eq
+if-goto IF_TRUE13
+goto IF_FALSE13
+label IF_TRUE13
+push local 6
+push local 7
+call Thirteen.small 2
+pop temp 0
+label IF_FALSE13
+push local 0
+push constant 14
+eq
+if-goto IF_TRUE14
+goto IF_FALSE14
+label IF_TRUE14
+push local 6
+push local 7
+call Fourteen.small 2
+pop temp 0
+label IF_FALSE14
+push local 0
+push constant 15
+eq
+if-goto IF_TRUE15
+goto IF_FALSE15
+label IF_TRUE15
+push local 6
+push local 7
+call Fifteen.small 2
+pop temp 0
+label IF_FALSE15
+push local 0
+push constant 16
+eq
+if-goto IF_TRUE16
+goto IF_FALSE16
+label IF_TRUE16
+push local 6
+push local 7
+call Sixteen.small 2
+pop temp 0
+label IF_FALSE16
+push local 2
+push constant 1
+add
+pop local 2
+push constant 15
+push local 1
+push argument 0
+add
+call Random.randRange 2
+push constant 1
+add
+pop local 0
+label IF_FALSE0
+push local 2
+push constant 2
+eq
+if-goto IF_TRUE17
+goto IF_FALSE17
+label IF_TRUE17
+push constant 1
+push local 16
+add
+push local 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+push constant 1
+eq
+if-goto IF_TRUE18
+goto IF_FALSE18
+label IF_TRUE18
+push local 8
+push local 9
+call One.small 2
+pop temp 0
+label IF_FALSE18
+push local 0
+push constant 2
+eq
+if-goto IF_TRUE19
+goto IF_FALSE19
+label IF_TRUE19
+push local 8
+push local 9
+call Two.small 2
+pop temp 0
+label IF_FALSE19
+push local 0
+push constant 3
+eq
+if-goto IF_TRUE20
+goto IF_FALSE20
+label IF_TRUE20
+push local 8
+push local 9
+call Three.small 2
+pop temp 0
+label IF_FALSE20
+push local 0
+push constant 4
+eq
+if-goto IF_TRUE21
+goto IF_FALSE21
+label IF_TRUE21
+push local 8
+push local 9
+call Four.small 2
+pop temp 0
+label IF_FALSE21
+push local 0
+push constant 5
+eq
+if-goto IF_TRUE22
+goto IF_FALSE22
+label IF_TRUE22
+push local 8
+push local 9
+call Five.small 2
+pop temp 0
+label IF_FALSE22
+push local 0
+push constant 6
+eq
+if-goto IF_TRUE23
+goto IF_FALSE23
+label IF_TRUE23
+push local 8
+push local 9
+call Six.small 2
+pop temp 0
+label IF_FALSE23
+push local 0
+push constant 7
+eq
+if-goto IF_TRUE24
+goto IF_FALSE24
+label IF_TRUE24
+push local 8
+push local 9
+call Seven.small 2
+pop temp 0
+label IF_FALSE24
+push local 0
+push constant 8
+eq
+if-goto IF_TRUE25
+goto IF_FALSE25
+label IF_TRUE25
+push local 8
+push local 9
+call Eight.small 2
+pop temp 0
+label IF_FALSE25
+push local 0
+push constant 9
+eq
+if-goto IF_TRUE26
+goto IF_FALSE26
+label IF_TRUE26
+push local 8
+push local 9
+call Nine.small 2
+pop temp 0
+label IF_FALSE26
+push local 0
+push constant 10
+eq
+if-goto IF_TRUE27
+goto IF_FALSE27
+label IF_TRUE27
+push local 8
+push local 9
+call Ten.small 2
+pop temp 0
+label IF_FALSE27
+push local 0
+push constant 11
+eq
+if-goto IF_TRUE28
+goto IF_FALSE28
+label IF_TRUE28
+push local 8
+push local 9
+call Eleven.small 2
+pop temp 0
+label IF_FALSE28
+push local 0
+push constant 12
+eq
+if-goto IF_TRUE29
+goto IF_FALSE29
+label IF_TRUE29
+push local 8
+push local 9
+call Twelve.small 2
+pop temp 0
+label IF_FALSE29
+push local 0
+push constant 13
+eq
+if-goto IF_TRUE30
+goto IF_FALSE30
+label IF_TRUE30
+push local 8
+push local 9
+call Thirteen.small 2
+pop temp 0
+label IF_FALSE30
+push local 0
+push constant 14
+eq
+if-goto IF_TRUE31
+goto IF_FALSE31
+label IF_TRUE31
+push local 8
+push local 9
+call Fourteen.small 2
+pop temp 0
+label IF_FALSE31
+push local 0
+push constant 15
+eq
+if-goto IF_TRUE32
+goto IF_FALSE32
+label IF_TRUE32
+push local 8
+push local 9
+call Fifteen.small 2
+pop temp 0
+label IF_FALSE32
+push local 0
+push constant 16
+eq
+if-goto IF_TRUE33
+goto IF_FALSE33
+label IF_TRUE33
+push local 8
+push local 9
+call Sixteen.small 2
+pop temp 0
+label IF_FALSE33
+push local 2
+push constant 1
+add
+pop local 2
+push constant 15
+push local 1
+push argument 0
+add
+call Random.randRange 2
+push constant 1
+add
+pop local 0
+label IF_FALSE17
+push local 2
+push constant 3
+eq
+if-goto IF_TRUE34
+goto IF_FALSE34
+label IF_TRUE34
+push constant 2
+push local 16
+add
+push local 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+push constant 1
+eq
+if-goto IF_TRUE35
+goto IF_FALSE35
+label IF_TRUE35
+push local 10
+push local 11
+call One.small 2
+pop temp 0
+label IF_FALSE35
+push local 0
+push constant 2
+eq
+if-goto IF_TRUE36
+goto IF_FALSE36
+label IF_TRUE36
+push local 10
+push local 11
+call Two.small 2
+pop temp 0
+label IF_FALSE36
+push local 0
+push constant 3
+eq
+if-goto IF_TRUE37
+goto IF_FALSE37
+label IF_TRUE37
+push local 10
+push local 11
+call Three.small 2
+pop temp 0
+label IF_FALSE37
+push local 0
+push constant 4
+eq
+if-goto IF_TRUE38
+goto IF_FALSE38
+label IF_TRUE38
+push local 10
+push local 11
+call Four.small 2
+pop temp 0
+label IF_FALSE38
+push local 0
+push constant 5
+eq
+if-goto IF_TRUE39
+goto IF_FALSE39
+label IF_TRUE39
+push local 10
+push local 11
+call Five.small 2
+pop temp 0
+label IF_FALSE39
+push local 0
+push constant 6
+eq
+if-goto IF_TRUE40
+goto IF_FALSE40
+label IF_TRUE40
+push local 10
+push local 11
+call Six.small 2
+pop temp 0
+label IF_FALSE40
+push local 0
+push constant 7
+eq
+if-goto IF_TRUE41
+goto IF_FALSE41
+label IF_TRUE41
+push local 10
+push local 11
+call Seven.small 2
+pop temp 0
+label IF_FALSE41
+push local 0
+push constant 8
+eq
+if-goto IF_TRUE42
+goto IF_FALSE42
+label IF_TRUE42
+push local 10
+push local 11
+call Eight.small 2
+pop temp 0
+label IF_FALSE42
+push local 0
+push constant 9
+eq
+if-goto IF_TRUE43
+goto IF_FALSE43
+label IF_TRUE43
+push local 10
+push local 11
+call Nine.small 2
+pop temp 0
+label IF_FALSE43
+push local 0
+push constant 10
+eq
+if-goto IF_TRUE44
+goto IF_FALSE44
+label IF_TRUE44
+push local 10
+push local 11
+call Ten.small 2
+pop temp 0
+label IF_FALSE44
+push local 0
+push constant 11
+eq
+if-goto IF_TRUE45
+goto IF_FALSE45
+label IF_TRUE45
+push local 10
+push local 11
+call Eleven.small 2
+pop temp 0
+label IF_FALSE45
+push local 0
+push constant 12
+eq
+if-goto IF_TRUE46
+goto IF_FALSE46
+label IF_TRUE46
+push local 10
+push local 11
+call Twelve.small 2
+pop temp 0
+label IF_FALSE46
+push local 0
+push constant 13
+eq
+if-goto IF_TRUE47
+goto IF_FALSE47
+label IF_TRUE47
+push local 10
+push local 11
+call Thirteen.small 2
+pop temp 0
+label IF_FALSE47
+push local 0
+push constant 14
+eq
+if-goto IF_TRUE48
+goto IF_FALSE48
+label IF_TRUE48
+push local 10
+push local 11
+call Fourteen.small 2
+pop temp 0
+label IF_FALSE48
+push local 0
+push constant 15
+eq
+if-goto IF_TRUE49
+goto IF_FALSE49
+label IF_TRUE49
+push local 10
+push local 11
+call Fifteen.small 2
+pop temp 0
+label IF_FALSE49
+push local 0
+push constant 16
+eq
+if-goto IF_TRUE50
+goto IF_FALSE50
+label IF_TRUE50
+push local 10
+push local 11
+call Sixteen.small 2
+pop temp 0
+label IF_FALSE50
+push local 2
+push constant 1
+add
+pop local 2
+push constant 15
+push local 1
+push argument 0
+add
+call Random.randRange 2
+push constant 1
+add
+pop local 0
+label IF_FALSE34
+goto WHILE_EXP2
+label WHILE_END2
+label WHILE_EXP3
+push local 3
+push constant 3
+gt
+not
+not
+if-goto WHILE_END3
+call Kbdinputs.pressed 0
+pop local 5
+push local 5
+push constant 0
+eq
+if-goto IF_TRUE51
+goto IF_FALSE51
+label IF_TRUE51
+push local 13
+not
+if-goto IF_TRUE52
+goto IF_FALSE52
+label IF_TRUE52
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 1
+eq
+if-goto IF_TRUE53
+goto IF_FALSE53
+label IF_TRUE53
+call One.values 0
+call One.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE54
+goto IF_FALSE54
+label IF_TRUE54
+push constant 0
+not
+pop local 12
+label IF_FALSE54
+call One.values 0
+call One.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE55
+goto IF_FALSE55
+label IF_TRUE55
+push constant 15
+push constant 15
+push local 17
+call One.play 3
+pop local 17
+push local 6
+push local 7
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call One.score 0
+add
+pop local 1
+label IF_FALSE55
+label IF_FALSE53
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 2
+eq
+if-goto IF_TRUE56
+goto IF_FALSE56
+label IF_TRUE56
+call Two.values 0
+call Two.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE57
+goto IF_FALSE57
+label IF_TRUE57
+push constant 0
+not
+pop local 12
+label IF_FALSE57
+call Two.values 0
+call Two.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE58
+goto IF_FALSE58
+label IF_TRUE58
+push constant 15
+push constant 15
+push local 17
+call Two.play 3
+pop local 17
+push local 6
+push local 7
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Two.score 0
+add
+pop local 1
+label IF_FALSE58
+label IF_FALSE56
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 3
+eq
+if-goto IF_TRUE59
+goto IF_FALSE59
+label IF_TRUE59
+call Three.values 0
+call Three.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE60
+goto IF_FALSE60
+label IF_TRUE60
+push constant 0
+not
+pop local 12
+label IF_FALSE60
+call Three.values 0
+call Three.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE61
+goto IF_FALSE61
+label IF_TRUE61
+push constant 15
+push constant 15
+push local 17
+call Three.play 3
+pop local 17
+push local 6
+push local 7
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Three.score 0
+add
+pop local 1
+label IF_FALSE61
+label IF_FALSE59
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 4
+eq
+if-goto IF_TRUE62
+goto IF_FALSE62
+label IF_TRUE62
+call Four.values 0
+call Four.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE63
+goto IF_FALSE63
+label IF_TRUE63
+push constant 0
+not
+pop local 12
+label IF_FALSE63
+call Four.values 0
+call Four.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE64
+goto IF_FALSE64
+label IF_TRUE64
+push constant 15
+push constant 15
+push local 17
+call Four.play 3
+pop local 17
+push local 6
+push local 7
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Four.score 0
+add
+pop local 1
+label IF_FALSE64
+label IF_FALSE62
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 5
+eq
+if-goto IF_TRUE65
+goto IF_FALSE65
+label IF_TRUE65
+call Five.values 0
+call Five.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE66
+goto IF_FALSE66
+label IF_TRUE66
+push constant 0
+not
+pop local 12
+label IF_FALSE66
+call Five.values 0
+call Five.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE67
+goto IF_FALSE67
+label IF_TRUE67
+push constant 15
+push constant 15
+push local 17
+call Five.play 3
+pop local 17
+push local 6
+push local 7
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Five.score 0
+add
+pop local 1
+label IF_FALSE67
+label IF_FALSE65
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 6
+eq
+if-goto IF_TRUE68
+goto IF_FALSE68
+label IF_TRUE68
+call Six.values 0
+call Six.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE69
+goto IF_FALSE69
+label IF_TRUE69
+push constant 0
+not
+pop local 12
+label IF_FALSE69
+call Six.values 0
+call Six.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE70
+goto IF_FALSE70
+label IF_TRUE70
+push constant 15
+push constant 15
+push local 17
+call Six.play 3
+pop local 17
+push local 6
+push local 7
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Six.score 0
+add
+pop local 1
+label IF_FALSE70
+label IF_FALSE68
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 7
+eq
+if-goto IF_TRUE71
+goto IF_FALSE71
+label IF_TRUE71
+call Seven.values 0
+call Seven.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE72
+goto IF_FALSE72
+label IF_TRUE72
+push constant 0
+not
+pop local 12
+label IF_FALSE72
+call Seven.values 0
+call Seven.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE73
+goto IF_FALSE73
+label IF_TRUE73
+push constant 15
+push constant 15
+push local 17
+call Seven.play 3
+pop local 17
+push local 6
+push local 7
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Seven.score 0
+add
+pop local 1
+label IF_FALSE73
+label IF_FALSE71
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 8
+eq
+if-goto IF_TRUE74
+goto IF_FALSE74
+label IF_TRUE74
+call Eight.values 0
+call Eight.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE75
+goto IF_FALSE75
+label IF_TRUE75
+push constant 0
+not
+pop local 12
+label IF_FALSE75
+call Eight.values 0
+call Eight.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE76
+goto IF_FALSE76
+label IF_TRUE76
+push constant 15
+push constant 15
+push local 17
+call Eight.play 3
+pop local 17
+push local 6
+push local 7
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Eight.score 0
+add
+pop local 1
+label IF_FALSE76
+label IF_FALSE74
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 9
+eq
+if-goto IF_TRUE77
+goto IF_FALSE77
+label IF_TRUE77
+call Nine.values 0
+call Nine.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE78
+goto IF_FALSE78
+label IF_TRUE78
+push constant 0
+not
+pop local 12
+label IF_FALSE78
+call Nine.values 0
+call Nine.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE79
+goto IF_FALSE79
+label IF_TRUE79
+push constant 15
+push constant 15
+push local 17
+call Nine.play 3
+pop local 17
+push local 6
+push local 7
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Nine.score 0
+add
+pop local 1
+label IF_FALSE79
+label IF_FALSE77
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 10
+eq
+if-goto IF_TRUE80
+goto IF_FALSE80
+label IF_TRUE80
+call Ten.values 0
+call Ten.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE81
+goto IF_FALSE81
+label IF_TRUE81
+push constant 0
+not
+pop local 12
+label IF_FALSE81
+call Ten.values 0
+call Ten.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE82
+goto IF_FALSE82
+label IF_TRUE82
+push constant 15
+push constant 15
+push local 17
+call Ten.play 3
+pop local 17
+push local 6
+push local 7
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Ten.score 0
+add
+pop local 1
+label IF_FALSE82
+label IF_FALSE80
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 11
+eq
+if-goto IF_TRUE83
+goto IF_FALSE83
+label IF_TRUE83
+call Eleven.values 0
+call Eleven.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE84
+goto IF_FALSE84
+label IF_TRUE84
+push constant 0
+not
+pop local 12
+label IF_FALSE84
+call Eleven.values 0
+call Eleven.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE85
+goto IF_FALSE85
+label IF_TRUE85
+push constant 15
+push constant 15
+push local 17
+call Eleven.play 3
+pop local 17
+push local 6
+push local 7
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Eleven.score 0
+add
+pop local 1
+label IF_FALSE85
+label IF_FALSE83
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 12
+eq
+if-goto IF_TRUE86
+goto IF_FALSE86
+label IF_TRUE86
+call Twelve.values 0
+call Twelve.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE87
+goto IF_FALSE87
+label IF_TRUE87
+push constant 0
+not
+pop local 12
+label IF_FALSE87
+call Twelve.values 0
+call Twelve.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE88
+goto IF_FALSE88
+label IF_TRUE88
+push constant 15
+push constant 15
+push local 17
+call Twelve.play 3
+pop local 17
+push local 6
+push local 7
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Twelve.score 0
+add
+pop local 1
+label IF_FALSE88
+label IF_FALSE86
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 13
+eq
+if-goto IF_TRUE89
+goto IF_FALSE89
+label IF_TRUE89
+call Thirteen.values 0
+call Thirteen.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE90
+goto IF_FALSE90
+label IF_TRUE90
+push constant 0
+not
+pop local 12
+label IF_FALSE90
+call Thirteen.values 0
+call Thirteen.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE91
+goto IF_FALSE91
+label IF_TRUE91
+push constant 15
+push constant 15
+push local 17
+call Thirteen.play 3
+pop local 17
+push local 6
+push local 7
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Thirteen.score 0
+add
+pop local 1
+label IF_FALSE91
+label IF_FALSE89
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 14
+eq
+if-goto IF_TRUE92
+goto IF_FALSE92
+label IF_TRUE92
+call Fourteen.values 0
+call Fourteen.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE93
+goto IF_FALSE93
+label IF_TRUE93
+push constant 0
+not
+pop local 12
+label IF_FALSE93
+call Fourteen.values 0
+call Fourteen.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE94
+goto IF_FALSE94
+label IF_TRUE94
+push constant 15
+push constant 15
+push local 17
+call Fourteen.play 3
+pop local 17
+push local 6
+push local 7
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Fourteen.score 0
+add
+pop local 1
+label IF_FALSE94
+label IF_FALSE92
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 15
+eq
+if-goto IF_TRUE95
+goto IF_FALSE95
+label IF_TRUE95
+call Fifteen.values 0
+call Fifteen.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE96
+goto IF_FALSE96
+label IF_TRUE96
+push constant 0
+not
+pop local 12
+label IF_FALSE96
+call Fifteen.values 0
+call Fifteen.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE97
+goto IF_FALSE97
+label IF_TRUE97
+push constant 15
+push constant 15
+push local 17
+call Fifteen.play 3
+pop local 17
+push local 6
+push local 7
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Fifteen.score 0
+add
+pop local 1
+label IF_FALSE97
+label IF_FALSE95
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 16
+eq
+if-goto IF_TRUE98
+goto IF_FALSE98
+label IF_TRUE98
+call Sixteen.values 0
+call Sixteen.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE99
+goto IF_FALSE99
+label IF_TRUE99
+push constant 0
+not
+pop local 12
+label IF_FALSE99
+call Sixteen.values 0
+call Sixteen.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE100
+goto IF_FALSE100
+label IF_TRUE100
+push constant 15
+push constant 15
+push local 17
+call Sixteen.play 3
+pop local 17
+push local 6
+push local 7
+call Blocks.eraser 2
+pop temp 0
+call Sixteen.score 0
+pop local 1
+label IF_FALSE100
+label IF_FALSE98
+push constant 0
+not
+pop local 13
+push local 3
+push constant 1
+add
+pop local 3
+push constant 4
+push constant 54
+call Output.moveCursor 2
+pop temp 0
+push local 1
+call Output.printInt 1
+pop temp 0
+label IF_FALSE52
+label IF_FALSE51
+push local 5
+push constant 1
+eq
+if-goto IF_TRUE101
+goto IF_FALSE101
+label IF_TRUE101
+push local 14
+not
+if-goto IF_TRUE102
+goto IF_FALSE102
+label IF_TRUE102
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 1
+eq
+if-goto IF_TRUE103
+goto IF_FALSE103
+label IF_TRUE103
+call One.values 0
+call One.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE104
+goto IF_FALSE104
+label IF_TRUE104
+push constant 0
+not
+pop local 12
+label IF_FALSE104
+push constant 15
+push constant 15
+push local 17
+call One.play 3
+pop local 17
+push local 8
+push local 9
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call One.score 0
+add
+pop local 1
+label IF_FALSE103
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 2
+eq
+if-goto IF_TRUE105
+goto IF_FALSE105
+label IF_TRUE105
+call Two.values 0
+call Two.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE106
+goto IF_FALSE106
+label IF_TRUE106
+push constant 0
+not
+pop local 12
+label IF_FALSE106
+call Two.values 0
+call Two.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE107
+goto IF_FALSE107
+label IF_TRUE107
+push constant 15
+push constant 15
+push local 17
+call Two.play 3
+pop local 17
+push local 8
+push local 9
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Two.score 0
+add
+pop local 1
+label IF_FALSE107
+label IF_FALSE105
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 3
+eq
+if-goto IF_TRUE108
+goto IF_FALSE108
+label IF_TRUE108
+call Three.values 0
+call Three.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE109
+goto IF_FALSE109
+label IF_TRUE109
+push constant 0
+not
+pop local 12
+label IF_FALSE109
+call Three.values 0
+call Three.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE110
+goto IF_FALSE110
+label IF_TRUE110
+push constant 15
+push constant 15
+push local 17
+call Three.play 3
+pop local 17
+push local 8
+push local 9
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Three.score 0
+add
+pop local 1
+label IF_FALSE110
+label IF_FALSE108
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 4
+eq
+if-goto IF_TRUE111
+goto IF_FALSE111
+label IF_TRUE111
+call Four.values 0
+call Four.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE112
+goto IF_FALSE112
+label IF_TRUE112
+push constant 0
+not
+pop local 12
+label IF_FALSE112
+call Four.values 0
+call Four.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE113
+goto IF_FALSE113
+label IF_TRUE113
+push constant 15
+push constant 15
+push local 17
+call Four.play 3
+pop local 17
+push local 8
+push local 9
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Four.score 0
+add
+pop local 1
+label IF_FALSE113
+label IF_FALSE111
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 5
+eq
+if-goto IF_TRUE114
+goto IF_FALSE114
+label IF_TRUE114
+call Five.values 0
+call Five.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE115
+goto IF_FALSE115
+label IF_TRUE115
+push constant 0
+not
+pop local 12
+label IF_FALSE115
+call Five.values 0
+call Five.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE116
+goto IF_FALSE116
+label IF_TRUE116
+push constant 15
+push constant 15
+push local 17
+call Five.play 3
+pop local 17
+push local 8
+push local 9
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Five.score 0
+add
+pop local 1
+label IF_FALSE116
+label IF_FALSE114
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 6
+eq
+if-goto IF_TRUE117
+goto IF_FALSE117
+label IF_TRUE117
+call Six.values 0
+call Six.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE118
+goto IF_FALSE118
+label IF_TRUE118
+push constant 0
+not
+pop local 12
+label IF_FALSE118
+call Six.values 0
+call Six.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE119
+goto IF_FALSE119
+label IF_TRUE119
+push constant 15
+push constant 15
+push local 17
+call Six.play 3
+pop local 17
+push local 8
+push local 9
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Six.score 0
+add
+pop local 1
+label IF_FALSE119
+label IF_FALSE117
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 7
+eq
+if-goto IF_TRUE120
+goto IF_FALSE120
+label IF_TRUE120
+call Seven.values 0
+call Seven.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE121
+goto IF_FALSE121
+label IF_TRUE121
+push constant 0
+not
+pop local 12
+label IF_FALSE121
+call Seven.values 0
+call Seven.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE122
+goto IF_FALSE122
+label IF_TRUE122
+push constant 15
+push constant 15
+push local 17
+call Seven.play 3
+pop local 17
+push local 8
+push local 9
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Seven.score 0
+add
+pop local 1
+label IF_FALSE122
+label IF_FALSE120
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 8
+eq
+if-goto IF_TRUE123
+goto IF_FALSE123
+label IF_TRUE123
+call Eight.values 0
+call Eight.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE124
+goto IF_FALSE124
+label IF_TRUE124
+push constant 0
+not
+pop local 12
+label IF_FALSE124
+call Eight.values 0
+call Eight.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE125
+goto IF_FALSE125
+label IF_TRUE125
+push constant 15
+push constant 15
+push local 17
+call Eight.play 3
+pop local 17
+push local 8
+push local 9
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Eight.score 0
+add
+pop local 1
+label IF_FALSE125
+label IF_FALSE123
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 9
+eq
+if-goto IF_TRUE126
+goto IF_FALSE126
+label IF_TRUE126
+call Nine.values 0
+call Nine.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE127
+goto IF_FALSE127
+label IF_TRUE127
+push constant 0
+not
+pop local 12
+label IF_FALSE127
+call Nine.values 0
+call Nine.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE128
+goto IF_FALSE128
+label IF_TRUE128
+push constant 15
+push constant 15
+push local 17
+call Nine.play 3
+pop local 17
+push local 8
+push local 9
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Nine.score 0
+add
+pop local 1
+label IF_FALSE128
+label IF_FALSE126
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 10
+eq
+if-goto IF_TRUE129
+goto IF_FALSE129
+label IF_TRUE129
+call Ten.values 0
+call Ten.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE130
+goto IF_FALSE130
+label IF_TRUE130
+push constant 0
+not
+pop local 12
+label IF_FALSE130
+call Ten.values 0
+call Ten.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE131
+goto IF_FALSE131
+label IF_TRUE131
+push constant 15
+push constant 15
+push local 17
+call Ten.play 3
+pop local 17
+push local 8
+push local 9
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Ten.score 0
+add
+pop local 1
+label IF_FALSE131
+label IF_FALSE129
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 11
+eq
+if-goto IF_TRUE132
+goto IF_FALSE132
+label IF_TRUE132
+call Eleven.values 0
+call Eleven.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE133
+goto IF_FALSE133
+label IF_TRUE133
+push constant 0
+not
+pop local 12
+label IF_FALSE133
+call Eleven.values 0
+call Eleven.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE134
+goto IF_FALSE134
+label IF_TRUE134
+push constant 15
+push constant 15
+push local 17
+call Eleven.play 3
+pop local 17
+push local 8
+push local 9
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Eleven.score 0
+add
+pop local 1
+label IF_FALSE134
+label IF_FALSE132
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 12
+eq
+if-goto IF_TRUE135
+goto IF_FALSE135
+label IF_TRUE135
+call Twelve.values 0
+call Twelve.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE136
+goto IF_FALSE136
+label IF_TRUE136
+push constant 0
+not
+pop local 12
+label IF_FALSE136
+call Twelve.values 0
+call Twelve.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE137
+goto IF_FALSE137
+label IF_TRUE137
+push constant 15
+push constant 15
+push local 17
+call Twelve.play 3
+pop local 17
+push local 8
+push local 9
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Twelve.score 0
+add
+pop local 1
+label IF_FALSE137
+label IF_FALSE135
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 13
+eq
+if-goto IF_TRUE138
+goto IF_FALSE138
+label IF_TRUE138
+call Thirteen.values 0
+call Thirteen.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE139
+goto IF_FALSE139
+label IF_TRUE139
+push constant 0
+not
+pop local 12
+label IF_FALSE139
+call Thirteen.values 0
+call Thirteen.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE140
+goto IF_FALSE140
+label IF_TRUE140
+push constant 15
+push constant 15
+push local 17
+call Thirteen.play 3
+pop local 17
+push local 8
+push local 9
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Thirteen.score 0
+add
+pop local 1
+label IF_FALSE140
+label IF_FALSE138
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 14
+eq
+if-goto IF_TRUE141
+goto IF_FALSE141
+label IF_TRUE141
+call Fourteen.values 0
+call Fourteen.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE142
+goto IF_FALSE142
+label IF_TRUE142
+push constant 0
+not
+pop local 12
+label IF_FALSE142
+call Fourteen.values 0
+call Fourteen.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE143
+goto IF_FALSE143
+label IF_TRUE143
+push constant 15
+push constant 15
+push local 17
+call Fourteen.play 3
+pop local 17
+push local 8
+push local 9
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Fourteen.score 0
+add
+pop local 1
+label IF_FALSE143
+label IF_FALSE141
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 15
+eq
+if-goto IF_TRUE144
+goto IF_FALSE144
+label IF_TRUE144
+call Fifteen.values 0
+call Fifteen.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE145
+goto IF_FALSE145
+label IF_TRUE145
+push constant 0
+not
+pop local 12
+label IF_FALSE145
+call Fifteen.values 0
+call Fifteen.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE146
+goto IF_FALSE146
+label IF_TRUE146
+push constant 15
+push constant 15
+push local 17
+call Fifteen.play 3
+pop local 17
+push local 8
+push local 9
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Fifteen.score 0
+add
+pop local 1
+label IF_FALSE146
+label IF_FALSE144
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 16
+eq
+if-goto IF_TRUE147
+goto IF_FALSE147
+label IF_TRUE147
+call Sixteen.values 0
+call Sixteen.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE148
+goto IF_FALSE148
+label IF_TRUE148
+push constant 0
+not
+pop local 12
+label IF_FALSE148
+call Sixteen.values 0
+call Sixteen.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE149
+goto IF_FALSE149
+label IF_TRUE149
+push constant 15
+push constant 15
+push local 17
+call Sixteen.play 3
+pop local 17
+push local 8
+push local 9
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Sixteen.score 0
+add
+pop local 1
+label IF_FALSE149
+label IF_FALSE147
+push constant 0
+not
+pop local 14
+push local 3
+push constant 1
+add
+pop local 3
+push constant 4
+push constant 54
+call Output.moveCursor 2
+pop temp 0
+push local 1
+call Output.printInt 1
+pop temp 0
+label IF_FALSE102
+label IF_FALSE101
+push local 5
+push constant 2
+eq
+if-goto IF_TRUE150
+goto IF_FALSE150
+label IF_TRUE150
+push local 15
+not
+if-goto IF_TRUE151
+goto IF_FALSE151
+label IF_TRUE151
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 1
+eq
+if-goto IF_TRUE152
+goto IF_FALSE152
+label IF_TRUE152
+call One.values 0
+call One.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE153
+goto IF_FALSE153
+label IF_TRUE153
+push constant 0
+not
+pop local 12
+label IF_FALSE153
+push constant 15
+push constant 15
+push local 17
+call One.play 3
+pop local 17
+push local 10
+push local 11
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call One.score 0
+add
+pop local 1
+label IF_FALSE152
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 2
+eq
+if-goto IF_TRUE154
+goto IF_FALSE154
+label IF_TRUE154
+call Two.values 0
+call Two.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE155
+goto IF_FALSE155
+label IF_TRUE155
+push constant 0
+not
+pop local 12
+label IF_FALSE155
+call Two.values 0
+call Two.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE156
+goto IF_FALSE156
+label IF_TRUE156
+push constant 15
+push constant 15
+push local 17
+call Two.play 3
+pop local 17
+push local 10
+push local 11
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Two.score 0
+add
+pop local 1
+label IF_FALSE156
+label IF_FALSE154
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 3
+eq
+if-goto IF_TRUE157
+goto IF_FALSE157
+label IF_TRUE157
+call Three.values 0
+call Three.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE158
+goto IF_FALSE158
+label IF_TRUE158
+push constant 0
+not
+pop local 12
+label IF_FALSE158
+call Three.values 0
+call Three.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE159
+goto IF_FALSE159
+label IF_TRUE159
+push constant 15
+push constant 15
+push local 17
+call Three.play 3
+pop local 17
+push local 10
+push local 11
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Three.score 0
+add
+pop local 1
+label IF_FALSE159
+label IF_FALSE157
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 4
+eq
+if-goto IF_TRUE160
+goto IF_FALSE160
+label IF_TRUE160
+call Four.values 0
+call Four.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE161
+goto IF_FALSE161
+label IF_TRUE161
+push constant 0
+not
+pop local 12
+label IF_FALSE161
+call Four.values 0
+call Four.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE162
+goto IF_FALSE162
+label IF_TRUE162
+push constant 15
+push constant 15
+push local 17
+call Four.play 3
+pop local 17
+push local 10
+push local 11
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Four.score 0
+add
+pop local 1
+label IF_FALSE162
+label IF_FALSE160
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 5
+eq
+if-goto IF_TRUE163
+goto IF_FALSE163
+label IF_TRUE163
+call Five.values 0
+call Five.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE164
+goto IF_FALSE164
+label IF_TRUE164
+push constant 0
+not
+pop local 12
+label IF_FALSE164
+call Five.values 0
+call Five.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE165
+goto IF_FALSE165
+label IF_TRUE165
+push constant 15
+push constant 15
+push local 17
+call Five.play 3
+pop local 17
+push local 10
+push local 11
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Five.score 0
+add
+pop local 1
+label IF_FALSE165
+label IF_FALSE163
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 6
+eq
+if-goto IF_TRUE166
+goto IF_FALSE166
+label IF_TRUE166
+call Six.values 0
+call Six.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE167
+goto IF_FALSE167
+label IF_TRUE167
+push constant 0
+not
+pop local 12
+label IF_FALSE167
+call Six.values 0
+call Six.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE168
+goto IF_FALSE168
+label IF_TRUE168
+push constant 15
+push constant 15
+push local 17
+call Six.play 3
+pop local 17
+push local 10
+push local 11
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Six.score 0
+add
+pop local 1
+label IF_FALSE168
+label IF_FALSE166
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 7
+eq
+if-goto IF_TRUE169
+goto IF_FALSE169
+label IF_TRUE169
+call Seven.values 0
+call Seven.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE170
+goto IF_FALSE170
+label IF_TRUE170
+push constant 0
+not
+pop local 12
+label IF_FALSE170
+call Seven.values 0
+call Seven.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE171
+goto IF_FALSE171
+label IF_TRUE171
+push constant 15
+push constant 15
+push local 17
+call Seven.play 3
+pop local 17
+push local 10
+push local 11
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Seven.score 0
+add
+pop local 1
+label IF_FALSE171
+label IF_FALSE169
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 8
+eq
+if-goto IF_TRUE172
+goto IF_FALSE172
+label IF_TRUE172
+call Eight.values 0
+call Eight.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE173
+goto IF_FALSE173
+label IF_TRUE173
+push constant 0
+not
+pop local 12
+label IF_FALSE173
+call Eight.values 0
+call Eight.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE174
+goto IF_FALSE174
+label IF_TRUE174
+push constant 15
+push constant 15
+push local 17
+call Eight.play 3
+pop local 17
+push local 10
+push local 11
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Eight.score 0
+add
+pop local 1
+label IF_FALSE174
+label IF_FALSE172
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 9
+eq
+if-goto IF_TRUE175
+goto IF_FALSE175
+label IF_TRUE175
+call Nine.values 0
+call Nine.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE176
+goto IF_FALSE176
+label IF_TRUE176
+push constant 0
+not
+pop local 12
+label IF_FALSE176
+call Nine.values 0
+call Nine.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE177
+goto IF_FALSE177
+label IF_TRUE177
+push constant 15
+push constant 15
+push local 17
+call Nine.play 3
+pop local 17
+push local 10
+push local 11
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Nine.score 0
+add
+pop local 1
+label IF_FALSE177
+label IF_FALSE175
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 10
+eq
+if-goto IF_TRUE178
+goto IF_FALSE178
+label IF_TRUE178
+call Ten.values 0
+call Ten.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE179
+goto IF_FALSE179
+label IF_TRUE179
+push constant 0
+not
+pop local 12
+label IF_FALSE179
+call Ten.values 0
+call Ten.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE180
+goto IF_FALSE180
+label IF_TRUE180
+push constant 15
+push constant 15
+push local 17
+call Ten.play 3
+pop local 17
+push local 10
+push local 11
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Ten.score 0
+add
+pop local 1
+label IF_FALSE180
+label IF_FALSE178
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 11
+eq
+if-goto IF_TRUE181
+goto IF_FALSE181
+label IF_TRUE181
+call Eleven.values 0
+call Eleven.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE182
+goto IF_FALSE182
+label IF_TRUE182
+push constant 0
+not
+pop local 12
+label IF_FALSE182
+call Eleven.values 0
+call Eleven.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE183
+goto IF_FALSE183
+label IF_TRUE183
+push constant 15
+push constant 15
+push local 17
+call Eleven.play 3
+pop local 17
+push local 10
+push local 11
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Eleven.score 0
+add
+pop local 1
+label IF_FALSE183
+label IF_FALSE181
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 12
+eq
+if-goto IF_TRUE184
+goto IF_FALSE184
+label IF_TRUE184
+call Twelve.values 0
+call Twelve.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE185
+goto IF_FALSE185
+label IF_TRUE185
+push constant 0
+not
+pop local 12
+label IF_FALSE185
+call Twelve.values 0
+call Twelve.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE186
+goto IF_FALSE186
+label IF_TRUE186
+push constant 15
+push constant 15
+push local 17
+call Twelve.play 3
+pop local 17
+push local 10
+push local 11
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Twelve.score 0
+add
+pop local 1
+label IF_FALSE186
+label IF_FALSE184
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 13
+eq
+if-goto IF_TRUE187
+goto IF_FALSE187
+label IF_TRUE187
+call Thirteen.values 0
+call Thirteen.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE188
+goto IF_FALSE188
+label IF_TRUE188
+push constant 0
+not
+pop local 12
+label IF_FALSE188
+call Thirteen.values 0
+call Thirteen.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE189
+goto IF_FALSE189
+label IF_TRUE189
+push constant 15
+push constant 15
+push local 17
+call Thirteen.play 3
+pop local 17
+push local 10
+push local 11
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Thirteen.score 0
+add
+pop local 1
+label IF_FALSE189
+label IF_FALSE187
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 14
+eq
+if-goto IF_TRUE190
+goto IF_FALSE190
+label IF_TRUE190
+call Fourteen.values 0
+call Fourteen.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE191
+goto IF_FALSE191
+label IF_TRUE191
+push constant 0
+not
+pop local 12
+label IF_FALSE191
+call Fourteen.values 0
+call Fourteen.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE192
+goto IF_FALSE192
+label IF_TRUE192
+push constant 15
+push constant 15
+push local 17
+call Fourteen.play 3
+pop local 17
+push local 10
+push local 11
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Fourteen.score 0
+add
+pop local 1
+label IF_FALSE192
+label IF_FALSE190
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 15
+eq
+if-goto IF_TRUE193
+goto IF_FALSE193
+label IF_TRUE193
+call Fifteen.values 0
+call Fifteen.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE194
+goto IF_FALSE194
+label IF_TRUE194
+push constant 0
+not
+pop local 12
+label IF_FALSE194
+call Fifteen.values 0
+call Fifteen.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE195
+goto IF_FALSE195
+label IF_TRUE195
+push constant 15
+push constant 15
+push local 17
+call Fifteen.play 3
+pop local 17
+push local 10
+push local 11
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Fifteen.score 0
+add
+pop local 1
+label IF_FALSE195
+label IF_FALSE193
+push local 5
+push local 16
+add
+pop pointer 1
+push that 0
+push constant 16
+eq
+if-goto IF_TRUE196
+goto IF_FALSE196
+label IF_TRUE196
+call Sixteen.values 0
+call Sixteen.score 0
+push local 17
+call Blocks.isGameover 3
+if-goto IF_TRUE197
+goto IF_FALSE197
+label IF_TRUE197
+push constant 0
+not
+pop local 12
+label IF_FALSE197
+call Sixteen.values 0
+call Sixteen.score 0
+push local 17
+call Blocks.isGameover 3
+not
+if-goto IF_TRUE198
+goto IF_FALSE198
+label IF_TRUE198
+push constant 15
+push constant 15
+push local 17
+call Sixteen.play 3
+pop local 17
+push local 10
+push local 11
+call Blocks.eraser 2
+pop temp 0
+push local 1
+call Sixteen.score 0
+add
+pop local 1
+label IF_FALSE198
+label IF_FALSE196
+push constant 0
+not
+pop local 15
+push local 3
+push constant 1
+add
+pop local 3
+push constant 4
+push constant 54
+call Output.moveCursor 2
+pop temp 0
+push local 1
+call Output.printInt 1
+pop temp 0
+label IF_FALSE151
+label IF_FALSE150
+push local 17
+call Blocks.check_rows 1
+pop local 17
+push local 17
+call Blocks.check_cols 1
+pop local 17
+push local 12
+if-goto IF_TRUE199
+goto IF_FALSE199
+label IF_TRUE199
+push constant 4
+pop local 3
+label IF_FALSE199
+goto WHILE_EXP3
+label WHILE_END3
+push constant 1
+pop local 2
+push constant 1
+pop local 3
+push constant 0
+pop local 13
+push constant 0
+pop local 14
+push constant 0
+pop local 15
+goto WHILE_EXP1
+label WHILE_END1
+push local 1
+return
+function Blocks.overscreen 0
+call Screen.clearScreen 0
+pop temp 0
+call Letter.Gameover 0
+pop temp 0
+push constant 20
+push constant 100
+push constant 492
+push constant 103
+call Screen.drawRectangle 4
+pop temp 0
+push constant 10
+push constant 21
+call Output.moveCursor 2
+pop temp 0
+push constant 16
+call String.new 1
+push constant 89
+call String.appendChar 2
+push constant 111
+call String.appendChar 2
+push constant 117
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 99
+call String.appendChar 2
+push constant 111
+call String.appendChar 2
+push constant 114
+call String.appendChar 2
+push constant 101
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+push constant 119
+call String.appendChar 2
+push constant 97
+call String.appendChar 2
+push constant 115
+call String.appendChar 2
+push constant 58
+call String.appendChar 2
+push constant 32
+call String.appendChar 2
+call Output.printString 1
+pop temp 0
+push argument 0
+call Output.printInt 1
+pop temp 0
+push constant 0
+return
+function Blocks.isGameover 2
+push constant 0
+not
+pop local 0
+label WHILE_EXP0
+push local 1
+push constant 72
+lt
+not
+if-goto WHILE_END0
+push argument 0
+push argument 1
+push local 1
+push argument 2
+call Blocks.isDrawable 4
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 0
+pop local 0
+label IF_FALSE0
+push local 1
+push constant 1
+add
+pop local 1
+goto WHILE_EXP0
+label WHILE_END0
+push local 0
+return
+function Blocks.isDrawable 3
+push constant 0
+pop local 0
+push constant 0
+pop local 1
+push constant 0
+pop local 2
+label WHILE_EXP0
+push local 0
+push argument 1
+lt
+not
+if-goto WHILE_END0
+push argument 2
+push local 0
+push argument 0
+add
+pop pointer 1
+push that 0
+add
+push argument 3
+add
+pop pointer 1
+push that 0
+push constant 0
+eq
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push local 1
+push constant 1
+add
+pop local 1
+label IF_FALSE0
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP0
+label WHILE_END0
+push local 1
+push argument 1
+eq
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push constant 0
+not
+pop local 2
+label IF_FALSE1
+push local 2
+return
+function Blocks.gridDraw 1
+push constant 0
+pop local 0
+label WHILE_EXP0
+push local 0
+push argument 1
+lt
+not
+if-goto WHILE_END0
+push argument 2
+push local 0
+push argument 0
+add
+pop pointer 1
+push that 0
+add
+push argument 3
+add
+push constant 0
+not
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP0
+label WHILE_END0
+push argument 3
+return
+function Blocks.is_row_full 2
+push constant 0
+pop local 0
+label WHILE_EXP0
+push local 0
+push constant 8
+lt
+not
+if-goto WHILE_END0
+push argument 1
+push constant 8
+call Math.multiply 2
+push local 0
+add
+push argument 0
+add
+pop pointer 1
+push that 0
+pop local 1
+push local 0
+push constant 1
+add
+pop local 0
+push local 1
+not
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 0
+return
+label IF_FALSE0
+goto WHILE_EXP0
+label WHILE_END0
+push constant 0
+not
+return
+function Blocks.is_col_full 2
+push constant 0
+pop local 0
+label WHILE_EXP0
+push local 0
+push constant 72
+lt
+not
+if-goto WHILE_END0
+push argument 1
+push local 0
+add
+push argument 0
+add
+pop pointer 1
+push that 0
+pop local 1
+push local 0
+push constant 8
+add
+pop local 0
+push local 1
+not
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 0
+return
+label IF_FALSE0
+goto WHILE_EXP0
+label WHILE_END0
+push constant 0
+not
+return
+function Blocks.check_rows 1
+push constant 0
+pop local 0
+label WHILE_EXP0
+push local 0
+push constant 9
+lt
+not
+if-goto WHILE_END0
+push argument 0
+push local 0
+call Blocks.deleterow 2
+pop argument 0
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP0
+label WHILE_END0
+push argument 0
+return
+function Blocks.check_cols 1
+push constant 0
+pop local 0
+label WHILE_EXP0
+push local 0
+push constant 8
+lt
+not
+if-goto WHILE_END0
+push argument 0
+push local 0
+call Blocks.deletecol 2
+pop argument 0
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP0
+label WHILE_END0
+push argument 0
+return
+function Blocks.deleterow 5
+push argument 0
+push argument 1
+call Blocks.is_row_full 2
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 15
+pop local 0
+push constant 207
+pop local 2
+push constant 13
+push argument 1
+push constant 24
+call Math.multiply 2
+add
+pop local 1
+push constant 13
+push argument 1
+push constant 1
+add
+push constant 24
+call Math.multiply 2
+add
+pop local 3
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push local 0
+push local 1
+push local 2
+push local 3
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 0
+pop local 4
+label WHILE_EXP0
+push local 4
+push constant 8
+lt
+not
+if-goto WHILE_END0
+push argument 1
+push constant 8
+call Math.multiply 2
+push local 4
+add
+push argument 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 4
+push constant 1
+add
+pop local 4
+goto WHILE_EXP0
+label WHILE_END0
+label IF_FALSE0
+push argument 0
+return
+function Blocks.deletecol 5
+push argument 0
+push argument 1
+call Blocks.is_col_full 2
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 13
+push argument 1
+push constant 24
+call Math.multiply 2
+add
+pop local 0
+push constant 13
+push argument 1
+push constant 1
+add
+push constant 24
+call Math.multiply 2
+add
+pop local 2
+push constant 13
+pop local 1
+push constant 231
+pop local 3
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push local 0
+push local 1
+push local 2
+push local 3
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+not
+call Screen.setColor 1
+pop temp 0
+push constant 0
+pop local 4
+label WHILE_EXP0
+push local 4
+push constant 72
+lt
+not
+if-goto WHILE_END0
+push argument 1
+push local 4
+add
+push argument 0
+add
+push constant 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 4
+push constant 8
+add
+pop local 4
+goto WHILE_EXP0
+label WHILE_END0
+label IF_FALSE0
+push argument 0
+return

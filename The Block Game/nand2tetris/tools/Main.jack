@@ -1,0 +1,36 @@
+class Main{
+    function void DrawRect(int x1, int y1, int x2, int y2, int h, int w){
+        var bool flag;
+        var int orgx;
+        let orgx = x1;
+        let flag = false;
+
+        //ako neki od uvjeta zadanih u zadatku nije zadovoljen, flag je true i ne ispisuje ga
+        if(x1<0+x2<0+y1<0+y2<0+~(x1<w)+~(x2<w)+~(y1<h)+~(y2<h)+(x2<y1)+(y2<y1)){
+            let flag = true;
+        }
+
+        if(~flag){
+            //prvi while radi vodoravne linije
+            while(~(x1>x2)){
+                do Screen.drawPixel(x1,y1);
+                do Screen.drawPixel(x1,y2);
+                let x1 = x1 + 1;
+            }
+            let x1 = orgx;
+            
+            //drugi while radi okomite linije
+            while(y1<y2){
+                do Screen.drawPixel(x1,y1);
+                do Screen.drawPixel(x2,y1);
+                let y1 = y1+1;
+            }           
+        }
+        return;
+    }
+
+    function void main(){
+        do Main.DrawRect(10,10,200,200,250,250);
+        return;
+    }
+}
