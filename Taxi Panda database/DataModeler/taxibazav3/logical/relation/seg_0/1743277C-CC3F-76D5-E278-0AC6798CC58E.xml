@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="SHIFT SALARY FK" directorySegmentName="seg_0" id="1743277C-CC3F-76D5-E278-0AC6798CC58E">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-28 13:28:05 UTC</createdTime>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<engineerTo>
+<item key="41110F69-9D37-03FA-60D5-A8E1BB9AA840" value="true"/>
+</engineerTo>
+<sourcePk>5FF67D91-08E0-183F-C98D-05C6FD375C78</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7CCE8536-14FD-279E-BCFC-440058F9FF17</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>8E71AFEB-8B26-41FA-FEDA-18BC84372C2E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

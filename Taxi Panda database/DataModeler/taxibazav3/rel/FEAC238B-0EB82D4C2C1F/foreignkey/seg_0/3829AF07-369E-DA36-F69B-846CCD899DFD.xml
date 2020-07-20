@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3829AF07-369E-DA36-F69B-846CCD899DFD" containerWithKeyObject="101F6C5F-C19B-8DAA-A474-8377F5BD4DFA" localFKIndex="AD17F12B-7AAF-417A-9A20-E1F7EE458133" name="SCHEDULE_DRIVER_FK">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 14:06:03 UTC</createdTime>
+<generatorID>DC4372A2-481B-A911-03D8-4A1C33D3D737</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<referredTableLongName>DRIVER</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F4064B3B-0E6A-504F-B7CF-F14F77E44973</referredTableID>
+<keyObject>D0C1F168-D671-6257-7525-EB2960BCB319</keyObject>
+<referredKeyID>D0C1F168-D671-6257-7525-EB2960BCB319</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>driver_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

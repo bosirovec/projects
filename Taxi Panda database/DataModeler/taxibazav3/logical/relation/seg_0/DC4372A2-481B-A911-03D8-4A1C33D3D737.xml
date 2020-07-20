@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="SALARY DRIVER FK" directorySegmentName="seg_0" id="DC4372A2-481B-A911-03D8-4A1C33D3D737">
+<createdBy>Borna</createdBy>
+<createdTime>2020-05-08 10:41:36 UTC</createdTime>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<engineerTo>
+<item key="41110F69-9D37-03FA-60D5-A8E1BB9AA840" value="true"/>
+</engineerTo>
+<sourcePk>939E4546-B040-24DA-8B80-DAEA49288908</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C8DC3222-49EA-FEEC-1D06-03F81CD5F294</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7CCE8536-14FD-279E-BCFC-440058F9FF17</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

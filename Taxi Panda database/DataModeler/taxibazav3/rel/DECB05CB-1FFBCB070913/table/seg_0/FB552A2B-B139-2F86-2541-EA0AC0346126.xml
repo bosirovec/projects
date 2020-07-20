@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FB552A2B-B139-2F86-2541-EA0AC0346126" name="SHIFT_TYPE">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 13:52:56 UTC</createdTime>
+<generatorID>B0B37A16-93DD-3AD5-0BA0-B4B3D196616C</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="shift_type_id" id="8AA60438-4137-BA1D-DA03-53645A8D0965">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 13:52:56 UTC</createdTime>
+<generatorID>8DB0DF22-144C-2015-8685-EADCCD95C54B</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="length" id="3D0DE261-B93B-3A52-6396-B044ADA2685E">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 13:52:56 UTC</createdTime>
+<generatorID>5679EC00-A925-CF1C-255C-05790DE1D00B</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="start_time" id="A7F5B33F-36CF-1CAE-B31D-FD4E2FB4D81E">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 13:52:56 UTC</createdTime>
+<generatorID>B77D8896-01F6-72C1-C853-DB3322AFDA9D</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="09EF2CCE-815F-9626-5F9F-F347B36B2FCE" name="SHIFT_TYPE_PK">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 13:52:56 UTC</createdTime>
+<generatorID>BC55F6C4-C62C-ED3B-DA47-F703894BE125</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8AA60438-4137-BA1D-DA03-53645A8D0965"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

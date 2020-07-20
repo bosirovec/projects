@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="420AB119-EB92-44E6-953C-01FCF48575C0" containerWithKeyObject="E6E99C3D-EDBD-CC89-1B8E-8B6C4D25E48F" localFKIndex="D8933C4F-C2F2-6AC5-71C9-B89A2ECD93FB" name="RIDE_phone_FK">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 14:06:03 UTC</createdTime>
+<generatorID>25483517-9106-6F86-5345-B35A41869025</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<referredTableLongName>phone</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F6FFF358-BA48-654B-3EC7-928C947BC07F</referredTableID>
+<keyObject>A096285A-D121-4E18-32F4-E6763D5130FB</keyObject>
+<referredKeyID>A096285A-D121-4E18-32F4-E6763D5130FB</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>phone_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

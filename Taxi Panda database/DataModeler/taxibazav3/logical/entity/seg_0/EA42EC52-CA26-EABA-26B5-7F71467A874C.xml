@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EA42EC52-CA26-EABA-26B5-7F71467A874C" name="EXPENSES">
+<createdBy>Borna</createdBy>
+<createdTime>2020-05-04 15:42:48 UTC</createdTime>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<engineerTo>
+<item key="DECB05CB-4B7E-4008-6C4F-1FFBCB070913" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="info" id="D98338BD-3B4A-8212-776D-5CA81330C39C">
+<createdBy>Borna</createdBy>
+<createdTime>2020-05-04 15:42:59 UTC</createdTime>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<engineerTo>
+<item key="DECB05CB-4B7E-4008-6C4F-1FFBCB070913" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cost" id="75B56CC3-D4B4-CD05-11FA-68EF0A495004">
+<createdBy>Borna</createdBy>
+<createdTime>2020-05-04 15:43:12 UTC</createdTime>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<engineerTo>
+<item key="DECB05CB-4B7E-4008-6C4F-1FFBCB070913" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="shift id" id="6B14DF2C-D134-42FC-2516-8466669E4773">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 13:54:12 UTC</createdTime>
+<generatorID>A33CD0D9-9121-1798-A6B6-C8FCF578B2FF</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<engineerTo>
+<item key="DECB05CB-4B7E-4008-6C4F-1FFBCB070913" value="true"/>
+</engineerTo>
+<referedAttribute>51E2E390-5A63-2FC3-59FB-4A6CFC026BAD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="schedule_id" id="BDF14173-625D-3C6F-DEA0-A499625FABBC">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 13:54:12 UTC</createdTime>
+<generatorID>A33CD0D9-9121-1798-A6B6-C8FCF578B2FF</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<engineerTo>
+<item key="DECB05CB-4B7E-4008-6C4F-1FFBCB070913" value="true"/>
+</engineerTo>
+<referedAttribute>DD347FD5-40F6-1F56-E251-FC2096ACDA1C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="ADC49E99-F908-691C-4B64-A8520530EA76" name="EXPENSES PK">
+<createdBy>Borna</createdBy>
+<createdTime>2020-05-08 08:26:22 UTC</createdTime>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="DECB05CB-4B7E-4008-6C4F-1FFBCB070913" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6B14DF2C-D134-42FC-2516-8466669E4773</attributeRef>
+<attributeRef>BDF14173-625D-3C6F-DEA0-A499625FABBC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,44 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B6943F2F-93C0-78A8-4E34-EA44B3AF7D53" name="FREQUENT_CUSTOMER">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 13:52:56 UTC</createdTime>
+<generatorID>73E30975-62BE-F41E-42EE-7C0414350C28</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="adress" id="26CB10B6-CD21-11C2-AB27-621AACD3B6C8">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 13:52:56 UTC</createdTime>
+<generatorID>ACD1B434-9E98-FAE4-052D-B3315B44DFD5</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name_nickname" id="15655794-0F8C-2901-CFA7-8ED6205C9054">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 13:52:56 UTC</createdTime>
+<generatorID>DBA08FFA-1C30-1C33-1427-920184B42826</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="25B146C3-FB60-D3AB-CEDE-D7EFBC469A9C" name="FREQUENT_CUSTOMER_PK">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 13:52:56 UTC</createdTime>
+<generatorID>BAD2F5CD-6FBE-3CC0-D03F-6D2B9C9C7109</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="26CB10B6-CD21-11C2-AB27-621AACD3B6C8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

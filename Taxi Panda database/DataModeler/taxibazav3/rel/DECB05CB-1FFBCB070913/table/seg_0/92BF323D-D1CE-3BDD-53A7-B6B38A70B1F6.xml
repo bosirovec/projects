@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="92BF323D-D1CE-3BDD-53A7-B6B38A70B1F6" name="phone">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 13:52:56 UTC</createdTime>
+<generatorID>AFE9CBE2-15AD-F94C-C67E-D61723C81E5D</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="phone_id" id="0DC8023A-00CD-4718-59E3-36A67507314F">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 13:52:56 UTC</createdTime>
+<generatorID>55A874C4-A46B-D5F3-E4DF-A7377304F517</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="number" id="14E8FCF8-95C7-9118-3C6D-A5482BDC14CC">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 13:52:56 UTC</createdTime>
+<generatorID>B40DB83A-20BA-9934-E6CD-EB1766429490</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RIDE_ride_id" id="28E0DE0D-EC5C-8C53-66D6-9AF0B7E8479F">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 13:55:39 UTC</createdTime>
+<generatorID>B77574F9-6FEE-C680-983D-962DDA92CFCA</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RIDE_DISPATCHER_dispatcher_id" id="DC0FD07C-A22F-4F11-FDF1-904AAD7110D0">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 13:55:39 UTC</createdTime>
+<generatorID>0BDD312B-F077-22FC-55AC-4066FB41B19C</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RIDE_SHIFT_shift_id" id="BE4DBE19-5A2D-CBD9-F847-3A296BBA3E97">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 13:55:39 UTC</createdTime>
+<generatorID>9175F0AA-B18A-555D-ABEA-B1EF9BB847CF</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RIDE_SHIFT_SCHEDULE_schedule_id" id="D1A72634-D367-6A15-7BFF-495A3165D575">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 13:55:39 UTC</createdTime>
+<generatorID>40C73E8B-65FC-2810-0251-D469BFF08D5C</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="468E4419-C664-2329-4380-A45866424B0A" name="phone_PK">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 13:52:56 UTC</createdTime>
+<generatorID>0F9CBDDE-9ECA-AC1D-A79C-B03AA08096CF</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0DC8023A-00CD-4718-59E3-36A67507314F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0E2A8D5B-D908-FDBD-39A5-4D3CDFC3395C" name="phone__IDX">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 13:55:39 UTC</createdTime>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>6F79E561-4741-8AD0-35C6-6416484091CB</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="28E0DE0D-EC5C-8C53-66D6-9AF0B7E8479F"/>
+<colUsage columnID="DC0FD07C-A22F-4F11-FDF1-904AAD7110D0"/>
+<colUsage columnID="BE4DBE19-5A2D-CBD9-F847-3A296BBA3E97"/>
+<colUsage columnID="D1A72634-D367-6A15-7BFF-495A3165D575"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9E4AB3A6-E0B2-8C91-B464-590153E97300" name="phone__IDXv1">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 14:03:59 UTC</createdTime>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>6F79E561-4741-8AD0-35C6-6416484091CB</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="28E0DE0D-EC5C-8C53-66D6-9AF0B7E8479F"/>
+<colUsage columnID="BE4DBE19-5A2D-CBD9-F847-3A296BBA3E97"/>
+<colUsage columnID="D1A72634-D367-6A15-7BFF-495A3165D575"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="17CB40AD-54BE-B01D-E81F-C8C8D030815A" name="SHIFT">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 13:52:56 UTC</createdTime>
+<generatorID>8E71AFEB-8B26-41FA-FEDA-18BC84372C2E</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="shift_id" id="E16110E7-AFED-829F-FC3C-5B0A41F4A45F">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 13:52:56 UTC</createdTime>
+<generatorID>51E2E390-5A63-2FC3-59FB-4A6CFC026BAD</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="day" id="A32EFEA3-7002-AE7D-3C87-0A094A5EE0E1">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 13:52:56 UTC</createdTime>
+<generatorID>AAEBDD93-0FD7-931B-2361-CA8FD2CDEEA5</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SCHEDULE_schedule_id" id="1BD0D897-48B2-58BA-2682-4F93A8C483DA">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 13:52:56 UTC</createdTime>
+<generatorID>DD347FD5-40F6-1F56-E251-FC2096ACDA1C</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F51ED46F-1231-C324-8DB7-2CA02DA6B8A2" referredColumn="DF21F022-853B-7D91-88F4-25E7267268D6"/>
+</associations>
+</Column>
+<Column name="SHIFT_TYPE_shift_type_id" id="E6A389F7-FC9E-8B80-66F4-01AF746B7742">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 13:52:56 UTC</createdTime>
+<generatorID>32FB73C5-2EF4-30B7-1A2E-936847DA64C6</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F8CACD1F-51FA-670A-85EB-25103C0D9AA5" referredColumn="8AA60438-4137-BA1D-DA03-53645A8D0965"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5ECD052C-F3CF-4663-880E-EB003DB284A4" name="SHIFT_PK">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 13:52:56 UTC</createdTime>
+<generatorID>463DB7D0-388B-F464-35B1-AC70D0041120</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E16110E7-AFED-829F-FC3C-5B0A41F4A45F"/>
+<colUsage columnID="1BD0D897-48B2-58BA-2682-4F93A8C483DA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="75089DBE-F607-FDF7-7CF6-FF40EB6A6A5B" name="SHIFT__IDX">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 13:52:56 UTC</createdTime>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>2695D533-E444-A183-F3B9-C6A1085523F1</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="E6A389F7-FC9E-8B80-66F4-01AF746B7742"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0A28279D-92DA-4EAE-AB1D-0CB715DBAF4F" name="SHIFT_SHIFT_TYPE_FK">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 13:52:56 UTC</createdTime>
+<generatorID>2695D533-E444-A183-F3B9-C6A1085523F1</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E6A389F7-FC9E-8B80-66F4-01AF746B7742"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0D6EC313-89A1-5A13-47C1-050D820A60CA" name="SHIFT_SCHEDULE_FK">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 13:52:56 UTC</createdTime>
+<generatorID>1743277C-CC3F-76D5-E278-0AC6798CC58E</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1BD0D897-48B2-58BA-2682-4F93A8C483DA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

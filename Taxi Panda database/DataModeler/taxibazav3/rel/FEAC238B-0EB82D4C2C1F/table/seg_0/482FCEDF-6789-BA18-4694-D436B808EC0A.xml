@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="482FCEDF-6789-BA18-4694-D436B808EC0A" name="Vehicle">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 14:06:03 UTC</createdTime>
+<generatorID>9BEE41E9-1E43-555C-10EB-C15EE14ED162</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="vehicle_id" id="EBE9CFC4-5F4F-A4D7-AD20-BDEDFD831533">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 14:06:03 UTC</createdTime>
+<generatorID>58933147-A961-8BB8-2A2D-A4EB524ADAC2</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="brand" id="FCC39F70-6E15-B6A7-B218-A32A9CE42F01">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 14:06:03 UTC</createdTime>
+<generatorID>EF9940FA-C75C-9BD6-9776-E23162F27443</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="model" id="2EB5B0F5-88FE-589F-F662-2422B9E2245C">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 14:06:03 UTC</createdTime>
+<generatorID>72F0D261-5803-D738-AF43-E75C60AB3191</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="year" id="0073AEE9-A3C4-7FB1-2075-01D3A4D40D7F">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 14:06:03 UTC</createdTime>
+<generatorID>6D4CB5A3-4841-5DED-0AB7-5E0F96DEA8EF</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fuel_type" id="259C3F2B-6049-A648-51D5-9C3EAC307ECF">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 14:06:03 UTC</createdTime>
+<generatorID>8A16716E-6398-17FA-6331-F648DC9E26D0</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="seats" id="7D1B1B1C-185F-981C-F1C1-A3AF9924B471">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 14:06:03 UTC</createdTime>
+<generatorID>D720AA93-3836-8230-6FDC-CCB55F1E4830</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mechanic_info" id="0B15C9FB-B9D0-6229-2383-9E14975963F6">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 14:06:03 UTC</createdTime>
+<generatorID>678088DB-D7BE-5E9F-840F-BB4C0C5F7E59</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="kilometers" id="258A2312-C512-71AE-C91A-612EA9D19992">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 14:06:03 UTC</createdTime>
+<generatorID>478ED990-6867-141B-7D47-264EAEF3C522</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5F94CBC3-282A-7E82-666F-A3A62D84F307" name="Vehicle_PK">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 14:06:03 UTC</createdTime>
+<generatorID>C6BE4588-ADDA-62BD-7077-3B2BB999105B</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EBE9CFC4-5F4F-A4D7-AD20-BDEDFD831533"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

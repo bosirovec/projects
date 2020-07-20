@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8E71AFEB-8B26-41FA-FEDA-18BC84372C2E" name="SHIFT">
+<createdBy>Borna</createdBy>
+<createdTime>2020-04-17 11:55:05 UTC</createdTime>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<engineerTo>
+<item key="DECB05CB-4B7E-4008-6C4F-1FFBCB070913" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="shift id" id="51E2E390-5A63-2FC3-59FB-4A6CFC026BAD">
+<createdBy>Borna</createdBy>
+<createdTime>2020-04-17 11:55:11 UTC</createdTime>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<engineerTo>
+<item key="DECB05CB-4B7E-4008-6C4F-1FFBCB070913" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="day" id="AAEBDD93-0FD7-931B-2361-CA8FD2CDEEA5">
+<createdBy>Borna</createdBy>
+<createdTime>2020-04-17 11:55:46 UTC</createdTime>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<engineerTo>
+<item key="DECB05CB-4B7E-4008-6C4F-1FFBCB070913" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="schedule_id" id="DD347FD5-40F6-1F56-E251-FC2096ACDA1C">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-28 13:28:05 UTC</createdTime>
+<generatorID>1743277C-CC3F-76D5-E278-0AC6798CC58E</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<engineerTo>
+<item key="DECB05CB-4B7E-4008-6C4F-1FFBCB070913" value="true"/>
+</engineerTo>
+<referedAttribute>91A5507B-04E7-396D-6162-FE910F35686B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="shift_type_id" id="32FB73C5-2EF4-30B7-1A2E-936847DA64C6">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 11:18:50 UTC</createdTime>
+<generatorID>2695D533-E444-A183-F3B9-C6A1085523F1</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<engineerTo>
+<item key="DECB05CB-4B7E-4008-6C4F-1FFBCB070913" value="true"/>
+</engineerTo>
+<referedAttribute>8DB0DF22-144C-2015-8685-EADCCD95C54B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="463DB7D0-388B-F464-35B1-AC70D0041120" name="SHIFT PK">
+<createdBy>Borna</createdBy>
+<createdTime>2020-04-17 11:55:24 UTC</createdTime>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="DECB05CB-4B7E-4008-6C4F-1FFBCB070913" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>51E2E390-5A63-2FC3-59FB-4A6CFC026BAD</attributeRef>
+<attributeRef>DD347FD5-40F6-1F56-E251-FC2096ACDA1C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

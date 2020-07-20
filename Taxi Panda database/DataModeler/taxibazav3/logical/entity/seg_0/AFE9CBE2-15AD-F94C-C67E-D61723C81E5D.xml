@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AFE9CBE2-15AD-F94C-C67E-D61723C81E5D" name="phone">
+<createdBy>Borna</createdBy>
+<createdTime>2020-04-17 11:37:27 UTC</createdTime>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<engineerTo>
+<item key="FEAC238B-7FB7-D421-E989-0EB82D4C2C1F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="phone id" id="55A874C4-A46B-D5F3-E4DF-A7377304F517">
+<createdBy>Borna</createdBy>
+<createdTime>2020-04-17 11:37:40 UTC</createdTime>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<engineerTo>
+<item key="FEAC238B-7FB7-D421-E989-0EB82D4C2C1F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="number" id="B40DB83A-20BA-9934-E6CD-EB1766429490">
+<createdBy>Borna</createdBy>
+<createdTime>2020-04-17 11:38:13 UTC</createdTime>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<engineerTo>
+<item key="FEAC238B-7FB7-D421-E989-0EB82D4C2C1F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0F9CBDDE-9ECA-AC1D-A79C-B03AA08096CF" name="phone PK">
+<createdBy>Borna</createdBy>
+<createdTime>2020-04-17 11:38:42 UTC</createdTime>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<engineerTo>
+<item key="FEAC238B-7FB7-D421-E989-0EB82D4C2C1F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>55A874C4-A46B-D5F3-E4DF-A7377304F517</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

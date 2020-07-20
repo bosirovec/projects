@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F8CACD1F-51FA-670A-85EB-25103C0D9AA5" containerWithKeyObject="17CB40AD-54BE-B01D-E81F-C8C8D030815A" localFKIndex="0A28279D-92DA-4EAE-AB1D-0CB715DBAF4F" name="SHIFT_SHIFT_TYPE_FK">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 13:52:56 UTC</createdTime>
+<generatorID>2695D533-E444-A183-F3B9-C6A1085523F1</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<referredTableLongName>SHIFT_TYPE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>FB552A2B-B139-2F86-2541-EA0AC0346126</referredTableID>
+<keyObject>09EF2CCE-815F-9626-5F9F-F347B36B2FCE</keyObject>
+<referredKeyID>09EF2CCE-815F-9626-5F9F-F347B36B2FCE</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>shift_type_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

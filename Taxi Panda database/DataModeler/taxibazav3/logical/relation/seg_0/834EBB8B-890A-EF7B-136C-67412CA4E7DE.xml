@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_21" directorySegmentName="seg_0" id="834EBB8B-890A-EF7B-136C-67412CA4E7DE">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 14:05:32 UTC</createdTime>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<engineerTo>
+<item key="FEAC238B-7FB7-D421-E989-0EB82D4C2C1F" value="true"/>
+</engineerTo>
+<sourcePk>C6BE4588-ADDA-62BD-7077-3B2BB999105B</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9BEE41E9-1E43-555C-10EB-C15EE14ED162</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E6B40493-BCA0-D00F-EFDD-B2328B0B3B22</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

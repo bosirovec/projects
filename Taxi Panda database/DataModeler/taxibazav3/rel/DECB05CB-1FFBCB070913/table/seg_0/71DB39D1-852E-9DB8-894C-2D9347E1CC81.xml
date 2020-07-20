@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="71DB39D1-852E-9DB8-894C-2D9347E1CC81" name="EXPENSES">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 13:52:56 UTC</createdTime>
+<generatorID>EA42EC52-CA26-EABA-26B5-7F71467A874C</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="info" id="A26AEAC5-AB7E-AA38-B773-96A8D9D8D084">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 13:52:56 UTC</createdTime>
+<generatorID>D98338BD-3B4A-8212-776D-5CA81330C39C</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cost" id="305F9B04-17DB-9FC0-66B2-FDDDDCD60E5B">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 13:52:56 UTC</createdTime>
+<generatorID>75B56CC3-D4B4-CD05-11FA-68EF0A495004</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SHIFT_shift_id" id="486DA103-003A-608F-A5D2-003B8C08A253">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 13:55:39 UTC</createdTime>
+<generatorID>6B14DF2C-D134-42FC-2516-8466669E4773</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4106BD8D-84D2-3F3A-C8FA-81A497B6C09A" referredColumn="E16110E7-AFED-829F-FC3C-5B0A41F4A45F"/>
+</associations>
+</Column>
+<Column name="SHIFT_SCHEDULE_schedule_id" id="95693B6D-781E-C802-FCD1-57182D0C7834">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 13:55:39 UTC</createdTime>
+<generatorID>BDF14173-625D-3C6F-DEA0-A499625FABBC</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4106BD8D-84D2-3F3A-C8FA-81A497B6C09A" referredColumn="1BD0D897-48B2-58BA-2682-4F93A8C483DA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F148B27D-BA16-14DF-0758-C9BE84F9D1A2" name="EXPENSES_PK">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 13:52:56 UTC</createdTime>
+<generatorID>ADC49E99-F908-691C-4B64-A8520530EA76</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="486DA103-003A-608F-A5D2-003B8C08A253"/>
+<colUsage columnID="95693B6D-781E-C802-FCD1-57182D0C7834"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="805C613C-2DFF-DBF0-B9AE-0961A9BF64F9" name="EXPENSES_SHIFT_FK">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 13:55:39 UTC</createdTime>
+<generatorID>A33CD0D9-9121-1798-A6B6-C8FCF578B2FF</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="486DA103-003A-608F-A5D2-003B8C08A253"/>
+<colUsage columnID="95693B6D-781E-C802-FCD1-57182D0C7834"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

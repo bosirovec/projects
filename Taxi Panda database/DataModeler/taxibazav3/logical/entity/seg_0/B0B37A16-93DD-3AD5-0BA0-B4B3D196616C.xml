@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B0B37A16-93DD-3AD5-0BA0-B4B3D196616C" name="SHIFT_TYPE">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 11:16:09 UTC</createdTime>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<engineerTo>
+<item key="41110F69-9D37-03FA-60D5-A8E1BB9AA840" value="true"/>
+<item key="F476FC1E-54E1-DDC2-F3BD-30098CF963D6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="shift_type_id" id="8DB0DF22-144C-2015-8685-EADCCD95C54B">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 11:16:21 UTC</createdTime>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<engineerTo>
+<item key="F476FC1E-54E1-DDC2-F3BD-30098CF963D6" value="true"/>
+<item key="41110F69-9D37-03FA-60D5-A8E1BB9AA840" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="length" id="5679EC00-A925-CF1C-255C-05790DE1D00B">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 11:16:48 UTC</createdTime>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<engineerTo>
+<item key="F476FC1E-54E1-DDC2-F3BD-30098CF963D6" value="true"/>
+<item key="41110F69-9D37-03FA-60D5-A8E1BB9AA840" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="start_time" id="B77D8896-01F6-72C1-C853-DB3322AFDA9D">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 11:17:22 UTC</createdTime>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<engineerTo>
+<item key="F476FC1E-54E1-DDC2-F3BD-30098CF963D6" value="true"/>
+<item key="41110F69-9D37-03FA-60D5-A8E1BB9AA840" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BC55F6C4-C62C-ED3B-DA47-F703894BE125" name="SHIFT_TYPE PK">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 11:16:31 UTC</createdTime>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<engineerTo>
+<item key="F476FC1E-54E1-DDC2-F3BD-30098CF963D6" value="true"/>
+<item key="41110F69-9D37-03FA-60D5-A8E1BB9AA840" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8DB0DF22-144C-2015-8685-EADCCD95C54B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

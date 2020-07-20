@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="79AB2BE2-E03E-23C5-5C98-3905DEA0F554" containerWithKeyObject="0FCDBB35-AF5B-F237-DBF6-C51CDFD4DD76" localFKIndex="5169A801-C480-22AD-7B91-C5757A4490C6" name="SHIFT_SCHEDULE_FK">
+<createdBy>Borna</createdBy>
+<createdTime>2020-06-29 14:06:03 UTC</createdTime>
+<generatorID>1743277C-CC3F-76D5-E278-0AC6798CC58E</generatorID>
+<ownerDesignName>taxibazav3</ownerDesignName>
+<referredTableLongName>SCHEDULE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>101F6C5F-C19B-8DAA-A474-8377F5BD4DFA</referredTableID>
+<keyObject>DA6BE25F-F590-4F04-BAF5-96B208661958</keyObject>
+<referredKeyID>DA6BE25F-F590-4F04-BAF5-96B208661958</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>schedule_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
